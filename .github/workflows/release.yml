@@ -89,8 +89,8 @@ jobs:
       - name: Update, prune and re-sign the repo
         run: |
           flatpak build-update-repo . \
-            --title="Donny Beelo Releases" \
-            --comment="Flatpak releases by Donny Beelo" \
+            --title="Daniel Elia's Flatpaks" \
+            --comment="Flatpak releases by Daniel Elia" \
             --homepage="https://donnybeelo.net" \
             --default-branch=stable \
             --generate-static-deltas --prune \

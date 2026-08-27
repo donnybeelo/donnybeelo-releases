@@ -1,8 +1,8 @@
 [Flatpak Repo]
-Title=Donny Beelo Releases
+Title=Daniel Elia's Flatpaks
 Url=https://releases.donnybeelo.net/
 Homepage=https://donnybeelo.net
-Comment=Flatpak releases by Donny Beelo
-Description=Flatpak release repository for applications by Donny Beelo.
+Comment=Flatpak releases by Daniel Elia
+Description=Flatpak release repository for applications by Daniel Elia.
 DefaultBranch=stable
 GPGKey=mDMEapAzIhYJKwYBBAHaRw8BAQdA8K3iELBKHKFeSTaPpr42l+fGPE4VBEdWj6JAvcL4kti0FERvbm55IEJlZWxvIFJlbGVhc2VziJMEExYKADsWIQSQMhsIu+jqwNDuGXxMkgJZg1UsAwUCapAzIgIbAwULCQgHAgIiAgYVCgkICwIEFgIDAQIeBwIXgAAKCRBMkgJZg1UsA+poAQCH49vwfkaJzkFuFwJ79ZXvAsBEchXv44FaLbYKYxqgMQEA+PZDU5eFskEiJMuD6DmMjT0oVJyJ9XrELL7vJIywVgO4OARqkDMiEgorBgEEAZdVAQUBAQdAdXaUZeNmatVGe3qoTOIUtePy1kb6Bnmb7pO/AM0hQG4DAQgHiHgEGBYKACAWIQSQMhsIu+jqwNDuGXxMkgJZg1UsAwUCapAzIgIbDAAKCRBMkgJZg1UsA3EZAP9vdS4/AujTGoKPLpWWAYLKLPP1VY51EI2BK7nyh5NH2AD+Jmfk19V1tGuPTRP75cHg+xmFqStzKv+SMwcq1c6iFwg=
