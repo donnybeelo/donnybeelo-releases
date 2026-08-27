@@ -75,7 +75,7 @@ jobs:
       - name: Fetch the manifest
         run: |
           git clone --depth 1 --branch "$MANIFEST_REF" \
-            https://gitlab.gnome.org/donnybeelo/geary.git src
+            https://gitlab.gnome.org/donnybeelo/convey.git src
           cp "src/${MANIFEST}" .
 
           # A push to main should publish that commit, not the tag the
