@@ -1,2 +1,6 @@
 tmp/
 .lock
+build-dir/
+src/
+.flatpak-builder/
+net.donnybeelo.Convey.yml
