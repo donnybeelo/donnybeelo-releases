@@ -54,6 +54,12 @@ jobs:
         with:
           fetch-depth: 0
 
+      # git cannot track empty directories, so a fresh clone of the ostree
+      # repo is missing refs/remotes, refs/mirrors, state and friends, and
+      # ostree fails with "Listing refs: opendir(refs/remotes)".
+      - name: Recreate ostree directories git cannot store
+        run: mkdir -p refs/heads refs/mirrors refs/remotes state extensions tmp/cache
+
       - name: Install flatpak tooling
         run: |
           sudo apt-get update -qq
@@ -148,4 +154,8 @@ jobs:
             exit 0
           fi
           git commit -m "${LABEL:-Rebuild}"
+
+          # Another app may have been published into this shared repo while
+          # we were building, so land on top of it rather than being rejected.
+          git pull --rebase --autostash origin main
           git push
