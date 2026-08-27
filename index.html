@@ -1,0 +1,52 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Donny Beelo releases</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1b1b1b; --bg:#fafafa; --mut:#5c5c5c; --br:#d8d8d8; --code:#f0f0f0; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#e8e8e8; --bg:#1b1b1b; --mut:#a0a0a0; --br:#383838; --code:#262626; }
+  }
+  body { margin:0 auto; padding:3rem 1.25rem; max-width:44rem; background:var(--bg); color:var(--fg);
+         font:16px/1.6 system-ui, sans-serif; }
+  h1 { font-size:1.9rem; margin:0 0 .25rem; }
+  p.sub { color:var(--mut); margin:0 0 2.5rem; }
+  h2 { font-size:1.1rem; margin:2.5rem 0 .75rem; }
+  pre { background:var(--code); border:1px solid var(--br); border-radius:6px;
+        padding:.85rem 1rem; overflow-x:auto; font-size:.9rem; }
+  table { border-collapse:collapse; width:100%; font-size:.95rem; }
+  th, td { text-align:left; padding:.5rem .75rem .5rem 0; border-bottom:1px solid var(--br); }
+  th { color:var(--mut); font-weight:600; }
+  a { color:inherit; }
+  footer { margin-top:3rem; padding-top:1.25rem; border-top:1px solid var(--br); color:var(--mut); font-size:.875rem; }
+</style>
+
+<h1>Donny Beelo releases</h1>
+<p class="sub">Flatpak release repository. Add it once; everything below installs from it.</p>
+
+<h2>Add the repository</h2>
+<pre>flatpak remote-add --if-not-exists donnybeelo https://releases.donnybeelo.net/donnybeelo.flatpakrepo</pre>
+
+<h2>Applications</h2>
+<table>
+  <tr><th>Application</th><th>ID</th><th>Install</th></tr>
+  <tr>
+    <td><a href="https://gitlab.gnome.org/donnybeelo/geary">Convey</a><br>
+        <span style="color:var(--mut)">Email client</span></td>
+    <td><code>net.donnybeelo.Convey</code></td>
+    <td><code>flatpak install donnybeelo net.donnybeelo.Convey</code></td>
+  </tr>
+</table>
+
+<h2>Updates</h2>
+<pre>flatpak update</pre>
+
+<h2>Signing</h2>
+<p>Releases are signed. The public key is embedded in
+<a href="donnybeelo.flatpakrepo">donnybeelo.flatpakrepo</a>, and available separately as
+<a href="donnybeelo-key.asc">donnybeelo-key.asc</a>.</p>
+
+<footer>
+  x86_64 only. Convey is a fork of
+  <a href="https://gitlab.gnome.org/GNOME/geary">Geary</a>.
+</footer>
