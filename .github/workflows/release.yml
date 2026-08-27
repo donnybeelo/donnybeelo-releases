@@ -114,7 +114,12 @@ jobs:
 
       - name: Build and sign
         run: |
+          # --compose-url-policy=full: without it the AppStream compose strips
+          # external screenshot URLs and software centres show "No
+          # Screenshots". Flathub mirrors them instead; a self-hosted repo
+          # has to keep the upstream URLs.
           flatpak-builder --user --force-clean --disable-rofiles-fuse \
+            --compose-url-policy=full \
             --repo=. --gpg-sign="$GPG_KEY" --default-branch=stable \
             build-dir "${MANIFEST}"
 
