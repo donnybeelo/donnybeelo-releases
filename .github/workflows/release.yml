@@ -4,12 +4,19 @@ name: Build and publish release
 # watch, so releasing is "pin the tag in the manifest, push, then run this".
 #   gh workflow run release.yml -f manifest_ref=flathub-prep
 on:
+  # Fired by GitLab CI on a push to main (see .gitlab-ci.yml in
+  # donnybeelo/geary), which passes the commit to build.
+  repository_dispatch:
+    types: [publish]
   workflow_dispatch:
     inputs:
       manifest_ref:
         description: Branch or tag of donnybeelo/geary to take the manifest from
-        default: flathub-prep
+        default: main
         required: true
+      app_commit:
+        description: Commit to build (blank = whatever the manifest pins)
+        required: false
       label:
         description: Commit message for the published repo (e.g. "Convey 51.0")
         default: Rebuild
@@ -30,6 +37,18 @@ jobs:
     permissions:
       contents: write
     steps:
+      - name: Resolve inputs from either trigger
+        run: |
+          if [ "${{ github.event_name }}" = repository_dispatch ]; then
+            echo "MANIFEST_REF=${{ github.event.client_payload.manifest_ref }}" >> "$GITHUB_ENV"
+            echo "APP_COMMIT=${{ github.event.client_payload.app_commit }}"     >> "$GITHUB_ENV"
+            echo "LABEL=${{ github.event.client_payload.label }}"               >> "$GITHUB_ENV"
+          else
+            echo "MANIFEST_REF=${{ inputs.manifest_ref }}" >> "$GITHUB_ENV"
+            echo "APP_COMMIT=${{ inputs.app_commit }}"     >> "$GITHUB_ENV"
+            echo "LABEL=${{ inputs.label }}"               >> "$GITHUB_ENV"
+          fi
+
       - name: Check out the release repo
         uses: actions/checkout@v4
         with:
@@ -49,10 +68,22 @@ jobs:
 
       - name: Fetch the manifest
         run: |
-          git clone --depth 1 --branch "${{ inputs.manifest_ref }}" \
+          git clone --depth 1 --branch "$MANIFEST_REF" \
             https://gitlab.gnome.org/donnybeelo/geary.git src
           cp "src/${MANIFEST}" .
-          echo "Manifest from ${{ inputs.manifest_ref }}:"
+
+          # A push to main should publish that commit, not the tag the
+          # manifest pins for reproducible release builds. Done with sed to
+          # avoid depending on PyYAML being present on the runner.
+          if [ -n "$APP_COMMIT" ]; then
+            sed -i "/donnybeelo\/geary.git/,+2 {
+              /^[[:space:]]*tag:/d
+              s|^\([[:space:]]*\)commit: .*|\1commit: $APP_COMMIT|
+            }" "${MANIFEST}"
+            grep -q "commit: $APP_COMMIT" "${MANIFEST}" \
+              || { echo "::error::failed to pin convey to $APP_COMMIT"; exit 1; }
+          fi
+          echo "Manifest from $MANIFEST_REF:"
           grep -A3 'donnybeelo/geary.git' "${MANIFEST}"
 
       # Building eds, folks and friends from source takes a long time; keep the
@@ -116,5 +147,5 @@ jobs:
             echo "Nothing changed; not committing."
             exit 0
           fi
-          git commit -m "${{ inputs.label }}"
+          git commit -m "${LABEL:-Rebuild}"
           git push
