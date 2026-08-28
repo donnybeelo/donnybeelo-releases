@@ -5,13 +5,13 @@ name: Build and publish release
 #   gh workflow run release.yml -f manifest_ref=flathub-prep
 on:
   # Fired by GitLab CI on a push to main (see .gitlab-ci.yml in
-  # donnybeelo/geary), which passes the commit to build.
+  # donnybeelo/convey), which passes the commit to build.
   repository_dispatch:
     types: [publish]
   workflow_dispatch:
     inputs:
       manifest_ref:
-        description: Branch or tag of donnybeelo/geary to take the manifest from
+        description: Branch or tag of donnybeelo/convey to take the manifest from
         default: main
         required: true
       app_commit:
@@ -82,7 +82,7 @@ jobs:
           # manifest pins for reproducible release builds. Done with sed to
           # avoid depending on PyYAML being present on the runner.
           if [ -n "$APP_COMMIT" ]; then
-            sed -i "/donnybeelo\/geary.git/,+2 {
+            sed -i "/donnybeelo\/convey.git/,+2 {
               /^[[:space:]]*tag:/d
               s|^\([[:space:]]*\)commit: .*|\1commit: $APP_COMMIT|
             }" "${MANIFEST}"
@@ -90,7 +90,7 @@ jobs:
               || { echo "::error::failed to pin convey to $APP_COMMIT"; exit 1; }
           fi
           echo "Manifest from $MANIFEST_REF:"
-          grep -A3 'donnybeelo/geary.git' "${MANIFEST}"
+          grep -A3 'donnybeelo/convey.git' "${MANIFEST}"
 
       # Building eds, folks and friends from source takes a long time; keep the
       # flatpak-builder cache between runs, keyed on the manifest itself.
