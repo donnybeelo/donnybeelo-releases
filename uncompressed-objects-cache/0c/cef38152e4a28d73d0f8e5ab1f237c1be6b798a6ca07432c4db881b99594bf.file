@@ -1,0 +1,1105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components version="0.8" origin="flatpak">
+  <component type="desktop-application">
+    <id>net.donnybeelo.Convey</id>
+    <name xml:lang="be-Cyrl">Convey</name>
+    <name xml:lang="bs-Latn">Convey</name>
+    <name>Convey</name>
+    <name xml:lang="ca">Convey</name>
+    <name xml:lang="cs">Convey</name>
+    <name xml:lang="da">Convey</name>
+    <name xml:lang="de">Convey</name>
+    <name xml:lang="el">Convey</name>
+    <name xml:lang="en-GB">Convey</name>
+    <name xml:lang="eo">Convey</name>
+    <name xml:lang="es">Convey</name>
+    <name xml:lang="eu">Convey</name>
+    <name xml:lang="fa">گیری</name>
+    <name xml:lang="fi">Convey</name>
+    <name xml:lang="fr">Convey</name>
+    <name xml:lang="fur">Convey</name>
+    <name xml:lang="gl">Convey</name>
+    <name xml:lang="he">Convey</name>
+    <name xml:lang="hr">Convey</name>
+    <name xml:lang="hu">Convey</name>
+    <name xml:lang="id">Convey</name>
+    <name xml:lang="ie">Convey</name>
+    <name xml:lang="it">Convey</name>
+    <name xml:lang="ja">Convey</name>
+    <name xml:lang="ka">Convey</name>
+    <name xml:lang="kk-Cyrl">Convey</name>
+    <name xml:lang="lt">Convey</name>
+    <name xml:lang="nb">Convey</name>
+    <name xml:lang="nl">Convey</name>
+    <name xml:lang="oc">Convey</name>
+    <name xml:lang="pl">Convey</name>
+    <name xml:lang="pt">Convey</name>
+    <name xml:lang="pt-BR">Convey</name>
+    <name xml:lang="ro">Convey</name>
+    <name xml:lang="ru">Convey</name>
+    <name xml:lang="sk">Convey</name>
+    <name xml:lang="sl">Convey</name>
+    <name xml:lang="sr-Cyrl">Гери</name>
+    <name xml:lang="sr-Latn">Geri</name>
+    <name xml:lang="sv">Convey</name>
+    <name xml:lang="tr">Convey</name>
+    <name xml:lang="uk">Convey</name>
+    <name xml:lang="zh-Hans-CN">Convey</name>
+    <name xml:lang="zh-Hant-TW">Convey</name>
+    <summary xml:lang="ar">ارسال و استقبال البريد الالكتروني</summary>
+    <summary xml:lang="be-Cyrl">Адпраўленне і атрыманне электроннай пошты</summary>
+    <summary xml:lang="bs-Latn">Šaljite i primajte e-poštu</summary>
+    <summary>Send and receive email</summary>
+    <summary xml:lang="ca">Envieu i rebeu correus electrònics</summary>
+    <summary xml:lang="cs">Odesílejte a přijímejte e-maily</summary>
+    <summary xml:lang="da">Send og modtag e-mail</summary>
+    <summary xml:lang="de">E-Mails senden und empfangen</summary>
+    <summary xml:lang="el">Αποστολή και λήψη ηλεκτρονικού ταχυδρομείου</summary>
+    <summary xml:lang="en-CA">Send and receive e-mail</summary>
+    <summary xml:lang="en-GB">Send and receive email</summary>
+    <summary xml:lang="eo">Sendi kaj ricevi retpoŝton</summary>
+    <summary xml:lang="es">Envíe y reciba mensajes de correo electrónico</summary>
+    <summary xml:lang="et">Send and receive email</summary>
+    <summary xml:lang="eu">Bidali eta jaso mezuak</summary>
+    <summary xml:lang="fa">فرستادن و گرفتن رایانامه</summary>
+    <summary xml:lang="fi">Lähetä ja vastaanota sähköpostia</summary>
+    <summary xml:lang="fr">Envoyer et recevoir des courriels</summary>
+    <summary xml:lang="fur">Invie e ricêf e-mail</summary>
+    <summary xml:lang="gl">Enviar e recibir correo</summary>
+    <summary xml:lang="he">שליחה וקבלה של דוא״ל</summary>
+    <summary xml:lang="hr">Primi i pošalji e-poštu</summary>
+    <summary xml:lang="hu">E-mailek küldése és fogadása</summary>
+    <summary xml:lang="id">Kirim dan terima surel</summary>
+    <summary xml:lang="ie">Inviar un reciver e-postage</summary>
+    <summary xml:lang="it">Invia e riceve email</summary>
+    <summary xml:lang="ja">メールの送信と受信</summary>
+    <summary xml:lang="ka">ელფოსტის გაგზავნა და მიღება</summary>
+    <summary xml:lang="kk-Cyrl">Эл. поштаны жіберу және қабылдау</summary>
+    <summary xml:lang="km">ផ្ញើ​និង​ទទួល​អ៊ីមែល</summary>
+    <summary xml:lang="lt">Siųsti ir gauti paštą</summary>
+    <summary xml:lang="ms">Hantar dan terima emel</summary>
+    <summary xml:lang="nb">Send og motta e-post</summary>
+    <summary xml:lang="nl">E-mail verzenden en ontvangen</summary>
+    <summary xml:lang="oc">Mandar e recebre de corrièrs electronics</summary>
+    <summary xml:lang="pl">Wysyłanie i odbieranie poczty</summary>
+    <summary xml:lang="pt">Enviar e receber mensagens</summary>
+    <summary xml:lang="pt-BR">Envie e receba e-mail</summary>
+    <summary xml:lang="ro">Trimite și primește emailuri</summary>
+    <summary xml:lang="ru">Отправка и получение эл. почты</summary>
+    <summary xml:lang="sk">Odosiela a prijíma emaily</summary>
+    <summary xml:lang="sl">Prejemanje in pošiljanje sporočil</summary>
+    <summary xml:lang="sr-Cyrl">Шаље и прима е-пошту</summary>
+    <summary xml:lang="sr-Latn">Šalje i prima e-poštu</summary>
+    <summary xml:lang="sv">Skicka och ta emot e-post</summary>
+    <summary xml:lang="tr">E-posta gönder ve al</summary>
+    <summary xml:lang="uk">Надіслати та одержати пошту</summary>
+    <summary xml:lang="zh-Hans-CN">发送并接收电子邮件</summary>
+    <summary xml:lang="zh-Hant-TW">寄送與收受郵件</summary>
+    <project_license>LGPL-2.1-or-later</project_license>
+    <description xml:lang="be-Cyrl">
+      <p>Гутаркі дазваляюць пабачыць усю размову без неабходнасці пераключэння паміж лістамі.</p>
+      <p>Магчымасці Convey:</p>
+      <ul>
+        <li>Хуткая наладка акаўнта электроннай пошты</li>
+        <li>Паказвае звязаныя лісты разам у размовах</li>
+        <li>Хуткі пошук тэксту і пошук па ключавых словах</li>
+        <li>Паўнавартасны рэдактар HTML і простага тэксту</li>
+        <li>Апавяшчэнні аб новых лістах на працоўным стале</li>
+        <li>Працуе з GMail, Yahoo! Mail, Outlook.com і іншымі серверамі IMAP</li>
+      </ul>
+    </description>
+    <description>
+      <p>
+      Convey is an email application built around conversations, for
+      the GNOME desktop. It allows you to read, find and send email
+      with a straightforward, modern interface.
+    </p>
+      <p>
+      Conversations allow you to read a complete discussion without
+      having to find and click from message to message.
+    </p>
+      <p>
+      Convey is a fork of Geary, originally developed by the Geary
+      Development Team and the Software Freedom Conservancy.
+    </p>
+      <p>Convey’s features include:</p>
+      <ul>
+        <li>Quick email account setup</li>
+        <li>Shows related messages together in conversations</li>
+        <li>Fast, full text and keyword search</li>
+        <li>Full-featured HTML and plain text message composer</li>
+        <li>Desktop notification of new mail</li>
+        <li>Compatible with GMail, Yahoo! Mail, Outlook.com and other IMAP servers</li>
+      </ul>
+    </description>
+    <description xml:lang="ca">
+      <p>Les converses us permeten llegir una conversa completa sense haver de buscar i fer clic de missatge en missatge.</p>
+      <p>Les característiques de Convey inclouen:</p>
+      <ul>
+        <li>Configuració ràpida de comptes de correu electrònic</li>
+        <li>Mostra missatges relacionats junts en converses</li>
+        <li>Ràpid, text complet i recerca per paraula clau</li>
+        <li>HTML amb totes les funcions i redacció de missatge de text</li>
+        <li>Notificació a l&apos;escriptori quan arribi correu nou</li>
+        <li>Compatible amb GMail, Yahoo! Mail, Outlook.com i d&apos;altres servidors IMAP</li>
+      </ul>
+    </description>
+    <description xml:lang="cs">
+      <p>Convey je poštovní aplikace pro uživatelské prostředí GNOME, která se soustředí na konverzace jako celek. Umožňuje číst, vyhledávat a odesílat e-maily v přímočarém a moderním prostředí.</p>
+      <p>Díky zaměření na konverzace můžete číst ucelené diskuze bez nutnosti vyhledávat jednotlivé navazující zprávy a klikat na ně.</p>
+      <p>Mezi funkcemi aplikace Convey najdete:</p>
+      <ul>
+        <li>Rychlé nastavení poštovního účtu</li>
+        <li>Zobrazení souvisejících zprávy dohromady v podobě konverzace</li>
+        <li>Rychlé vyhledávání v celém textu a na základě klíčových slov</li>
+        <li>Plnohodnotný editor zpráv v HTML i prostém textu</li>
+        <li>Upozornění na nové zprávy přímo v uživatelském prostředí</li>
+        <li>Kompatibilitu s GMail, Yahoo! Mail, Outlook.com a dalšími servery IMAP</li>
+      </ul>
+    </description>
+    <description xml:lang="da">
+      <p>Convey er et lille e-mailprogram til GNOME-skrivebordet, som er bygget op omkring samtaler. Det lader dig læse, finde og sende e-mail via en enkel, moderne brugerflade.</p>
+      <p>Samtaler lader dig læse en hel samtale uden at skulle finde hver enkelt besked frem én ad gangen.</p>
+      <p>Convey tilbyder:</p>
+      <ul>
+        <li>Hurtig opsætning af e-mailkonto</li>
+        <li>Viser relaterede beskeder sammen i samtaler</li>
+        <li>Hurtig fuldtekst- og nøgleordssøgning</li>
+        <li>Mange funktioner til redigering af HTML-beskeder samt ren tekst</li>
+        <li>Skrivebordspåmindelser om ny e-mail</li>
+        <li>Kompatibel med GMail, Yahoo! Mail, Outlook.com og andre IMAP-servere</li>
+      </ul>
+    </description>
+    <description xml:lang="de">
+      <p>Convey ist ein E-Mail-Programm für GNOME mit Fokus auf Konversationen. Es ermöglicht das einfache Lesen, Finden und Schreiben von E-Mails in einer übersichtlichen und modernen Benutzeroberfläche.</p>
+      <p>Konversationen ermöglichen das Lesen eines gesamten Diskussionsstrangs, ohne Nachrichten einzeln suchen zu müssen.</p>
+      <p>Funktionen von Convey umfassen:</p>
+      <ul>
+        <li>Schnelle Konto-Einrichtung</li>
+        <li>Verwandte Nachrichten gebündelt in Konversationen anzeigen</li>
+        <li>Schnelle Volltext- und Schlüsselwortsuche</li>
+        <li>Voll ausgestatteter HTML- und Klartext-Nachrichteneditor</li>
+        <li>Benachrichtigung bei neuer E-Mail</li>
+        <li>Kompatibel mit GMail, Yahoo! Mail, Outlook.com und weiteren IMAP-Servern</li>
+      </ul>
+    </description>
+    <description xml:lang="el">
+      <p>Το Convey είναι μια εφαρμογή ηλεκτρονικού ταχυδρομείου που βασίζεται σε συνομιλίες για την επιφάνεια εργασίας GNOME. Σας επιτρέπει να διαβάζετε, να βρίσκετε και να στέλνετε μηνύματα ηλεκτρονικού ταχυδρομείου με μια απλή, σύγχρονη διεπαφή.</p>
+      <p>Οι συνομιλίες σάς επιτρέπουν να διαβάσετε μια πλήρη συζήτηση χωρίς να χρειαστεί να βρείτε και να κάνετε κλικ από μήνυμα σε μήνυμα.</p>
+      <p>Τα χαρακτηριστικά του Convey περιλαμβάνουν:</p>
+      <ul>
+        <li>Γρήγορη ρύθμιση λογαριασμού ηλεκτρονικού ταχυδρομείου</li>
+        <li>Εμφανίζει τα σχετικά μηνύματα μαζί σε συνομιλίες</li>
+        <li>Γρήγορη πλήρης αναζήτηση κειμένου και λέξεων-κλειδιών</li>
+        <li>Πλήρης συνθέτης μηνυμάτων HTML και απλού κειμένου</li>
+        <li>Εμφάνιση ειδοποιήσεων για νέα μηνύματα</li>
+        <li>Συμβατό με το GMail, το Yahoo! Mail, Outlook.com και άλλους διακομιστές IMAP</li>
+      </ul>
+    </description>
+    <description xml:lang="en-GB">
+      <p>Convey is an email application built around conversations, for the GNOME desktop. It allows you to read, find and send email with a straightforward, modern interface.</p>
+      <p>Conversations allow you to read a complete discussion without having to find and click from message to message.</p>
+      <p>Convey’s features include:</p>
+      <ul>
+        <li>Quick email account setup</li>
+        <li>Shows related messages together in conversations</li>
+        <li>Fast, full text and keyword search</li>
+        <li>Full-featured HTML and plain text message composer</li>
+        <li>Desktop notification of new mail</li>
+        <li>Compatible with GMail, Yahoo! Mail, Outlook.com and other IMAP servers</li>
+      </ul>
+    </description>
+    <description xml:lang="es">
+      <p>Las conversaciones le permiten leer un hilo completo si tener que buscar y pulsa cada mensaje individual.</p>
+      <p>Entre las características de Convey se incluyen:</p>
+      <ul>
+        <li>Configuración rápida de la cuenta de correo</li>
+        <li>Mostrar mensajes relacionados entre ellos en las conversaciones</li>
+        <li>Búsqueda de palabras clave rápida y por texto completo</li>
+        <li>Editor completo de HYML y texto plano</li>
+        <li>Notificaciones de escritorio cuando llegue correo nuevo</li>
+        <li>Compatible con GMail, Yahoo! Mail, Outlook.com y otros servidores IMAP</li>
+      </ul>
+    </description>
+    <description xml:lang="eu">
+      <p>Berriketak erabilita, eztabaida osoak irakur daitezke mezu batetik hurrengora jauzi egin behar izan gabe.</p>
+      <p>Convey-ren eginbide nagusiak honakoak dira:</p>
+      <ul>
+        <li>Posta-kontuen konfigurazio azkarra</li>
+        <li>Elkarri lotutako mezuak berriketa moduan erakusten ditu</li>
+        <li>Bilaketa azkarra, testu osoena zein gako-hitzena</li>
+        <li>HTML formatuko zein testu soileko mezuen konposatzailea</li>
+        <li>Mezu berrien jakinarazpena mahaigainean</li>
+        <li>GMail, Yahoo! Mail, Outlook.com eta beste IMAP zerbitzari batzuekin bateragarria</li>
+      </ul>
+    </description>
+    <description xml:lang="fa">
+      <p>گیری برنامهٔ رایانامه‌ای ساخته برای میزکار گنوم حول گفت‌وگوست. این برنامه می‌گذارد رایانامه‌ها را با رابطی ساده و نوین خوانده، جسته و بفرستید.</p>
+      <p>گفت‌وگوها می‌گذارد بحثی را بدون نیاز به یافتن و کلیک پیام به پیام بخوانید.</p>
+      <p>ویژگی‌های گیری شامل:</p>
+      <ul>
+        <li>برپایی حساب رایانامهٔ سریع</li>
+        <li>نمایش پیام‌های مربوط به هم در گفت‌گوها</li>
+        <li>جست‌وجوی سریع کلیدواژه‌ای و متن کامل</li>
+        <li>پیام‌نویس متن خام و HTML با امکانات کامل</li>
+        <li>آگاهی میزکار برای نامهٔ جدید</li>
+        <li>سازگار با جی‌میل، یاهو!، اوت‌لوک و دیگر کارسازهای IMAP</li>
+      </ul>
+    </description>
+    <description xml:lang="fi">
+      <p>Convey on keskustelujen ympärille rakennettu sähköpostisovellus Gnome-työpöydälle. Sen avulla voit lukea, etsiä ja lähettää sähköpostia modernin käyttöliittymän kautta.</p>
+      <p>Keskusteluiden avulla voit lukea koko viestiketjun ilman, että joudut napsauttamaan viestistä toiseen itse.</p>
+      <p>Conveyn ominaisuuksiin kuuluu muun muassa:</p>
+      <ul>
+        <li>Nopea sähköpostitilin asetusten teko</li>
+        <li>Näyttää toisiinsa liittyvät viestit yhdessä keskustelumuodossa</li>
+        <li>Nopea haku koko tekstin ja avainsanojen tuella</li>
+        <li>Monipuolinen HTML- ja raakatekstilähetys</li>
+        <li>Työpöytäilmoitukset uusista viesteistä</li>
+        <li>Yhteensopiva GMailin, Yahoo! Mailin, Outlook.comin ja muiden IMAP-palvelinten kanssa</li>
+      </ul>
+    </description>
+    <description xml:lang="fr">
+      <p>Convey est une application de messagerie construite autour de conversations, pour le bureau GNOME. Elle permet de lire, rechercher et envoyer des courriels de façon simple, avec une interface élégante.</p>
+      <p>Les conversations permettent de lire les échanges sans avoir à naviguer d’un message à un autre.</p>
+      <p>Convey intègre les fonctionnalités suivantes :</p>
+      <ul>
+        <li>Configuration rapide du compte de messagerie</li>
+        <li>Affichage des messages liés sous forme de conversation</li>
+        <li>Recherche rapide, par mot-clé ou par texte</li>
+        <li>Édition de courriel en texte simple ou enrichi en HTML</li>
+        <li>Notification de nouveaux messages</li>
+        <li>Compatible avec GMail, Yahoo! Mail, Outlook.com et autres serveurs IMAP</li>
+      </ul>
+    </description>
+    <description xml:lang="fur">
+      <p>Lis conversazions ti permetin di lei une discussion complete cence vê di cjatâ e fâ clic di messaç in messaç.</p>
+      <p>Lis funzionalitâts di Convey a includin:</p>
+      <ul>
+        <li>Configurazion rapide dal account e-mail</li>
+        <li>Al mostre adun i messaçs colegâts in conversazions</li>
+        <li>Ricercje veloce di peraulis clâf e test complet</li>
+        <li>Redatôr complet di messaçs in HTML e test sempliç</li>
+        <li>Notifiche sul scritori de gnove pueste</li>
+        <li>Compatibil cun GMail, Yahoo! Mail, Outlook.com e altris servidôrs IMAP</li>
+      </ul>
+    </description>
+    <description xml:lang="gl">
+      <p>Convey é unha aplicación de correo-e construída ao redor das conversas, feita para o escritorio GNOME 3. Permítelle ler, buscar e enviar correos de forma rápida e nunha interface moderna.</p>
+      <p>As conversas permítenlle ler unha discusión completa sen ter que buscar e premer cada mensaxe.</p>
+      <p>Entre as características de Convey están:</p>
+      <ul>
+        <li>Configuración de contas de correo rápida</li>
+        <li>Mostrar mensaxes relacionadas conxuntamente en conversas</li>
+        <li>Busca rápida, de texto completo e por palabras chave</li>
+        <li>Compositor de mensaxes HTML completo ou de texto plano</li>
+        <li>Notificacións de escritorio para cada novo correo</li>
+        <li>Compatíbel con GMail, Yahoo! Mail, Outlook.com e outros servidores IMAP</li>
+      </ul>
+    </description>
+    <description xml:lang="he">
+      <p>‏Convey הוא יישם דוא״ל הבנוי סביב תכתובות, עבור שולחן העבודה GNOME. הוא מאפשר לקרוא, למצוא ולשלוח דוא״ל עם ממשק חדיש ופשוט.</p>
+      <p>תכתובות מאפשר לך לקרוא דיון שלם ללא הצורך למצוא וללחוץ מהודעה להודעה.</p>
+      <p>תכונות Convey כוללות:</p>
+      <ul>
+        <li>הגדרה מהירה של חשבון דוא״ל</li>
+        <li>הצגת הודעות קשורות יחד בתכתובות</li>
+        <li>חיפוש מילים מהיר ובכל הטקסט</li>
+        <li>תמיכה מלאה ב־HTML וביצירת הודעות בטקסט פשוט</li>
+        <li>הצגת התרעות על קבלת דואר חדש</li>
+        <li>תואם עם Gmail, Yahoo! Mail, Outlook.com ושרתי IMAP אחרים</li>
+      </ul>
+    </description>
+    <description xml:lang="hr">
+      <p>Razgovori vam omogućuju čitanje potpune rasprave bez potrebe za pronalaženjem i klikanjem iz poruke u poruku.</p>
+      <p>Conveyjeve značajke uključuju:</p>
+      <ul>
+        <li>Brzo podešavanje računa e-pošte</li>
+        <li>Prikazuje povezane poruke zajedno u razgovoru</li>
+        <li>Brza pretraga po potpunom tekstu i ključnoj riječi</li>
+        <li>Potpuno funkcionalan sastavljač poruke u HTML-u i običnom tekstu</li>
+        <li>Obavijest radnog okruženja o novoj pošti</li>
+        <li>Kompatibilno s GMailom, Yahoo! Mailom, Outlook.com i ostalim IMAP poslužiteljima</li>
+      </ul>
+    </description>
+    <description xml:lang="hu">
+      <p>A Convey egy e-mail alkalmazás, amely a társalgások köré szerveződik, és a GNOME asztalhoz készült. Segítségével e-maileket olvashat, kereshet és küldhet egy lényegre törő és modern felületen.</p>
+      <p>A társalgások segítségével teljes beszélgetéseket olvashat el anélkül, hogy egyesével végig kellene kattintania a leveleken.</p>
+      <p>A Convey néhány funkciója:</p>
+      <ul>
+        <li>Gyors e-mailfiók beállítás</li>
+        <li>A kapcsolódó leveleket együtt jeleníti meg a beszélgetésekben</li>
+        <li>Gyors, teljes szöveges és kulcsszavas keresés</li>
+        <li>Teljes funkcionalitású HTML és egyszerű szöveges levélszerkesztő</li>
+        <li>Asztali értesítések új levél érkezésekor</li>
+        <li>Kompatibilis a GMaillel, a Yahoo! Maillel, az Outlook.commal és más IMAP kiszolgálókkal</li>
+      </ul>
+    </description>
+    <description xml:lang="id">
+      <p>Convey adalah aplikasi surel yang dibangun di sekitar percakapan, bagi desktop GNOME. Memungkinkan Anda membaca, mencari, dan mengirim surel dengan antar muka yang modern, mudah.</p>
+      <p>Percakapan memungkinkan Anda membaca diskusi lengkap tanpa perlu mencari dan mengklik dari pesan ke pesan.</p>
+      <p>Fitur Convey termasuk:</p>
+      <ul>
+        <li>Penyiapan akun surel cepat</li>
+        <li>Menampilkan pesan-pesan yang berhubungan bersama-sama dalam percakapan</li>
+        <li>Pencarian kata kunci dan teks penuh yang cepat</li>
+        <li>Penyusun pesan teks polos dan HTML berfitur lengkap</li>
+        <li>Pemberitahuan desktop atas surat baru</li>
+        <li>Kompatibel dengan GMail, Yahoo! Mail, Outlook.com, dan peladen IMAP lain</li>
+      </ul>
+    </description>
+    <description xml:lang="it">
+      <p>Convey è un&apos;applicazione di posta elettronica basata sulle conversazioni, per l&apos;ambiente desktop GNOME. Permette di leggere, trovare e inviare email con un&apos;interfaccia semplice e moderna.</p>
+      <p>Le conversazioni permettono di leggere un&apos;intera discussione senza dover cercare e fare clic su ogni messaggio.</p>
+      <p>Le funzionalità di Convey comprendono:</p>
+      <ul>
+        <li>Rapida configurazione dell&apos;account di posta</li>
+        <li>Raggruppa i messaggi correlati in conversazioni</li>
+        <li>Ricerca rapida a testo intero (&quot;full text&quot;) e per parole chiave</li>
+        <li>Compositore dei messaggi in HTML e testo semplice</li>
+        <li>Notifiche desktop di nuova posta</li>
+        <li>Compatibile con GMail, Yahoo! Mail, Outlook.com e altri server IMAP</li>
+      </ul>
+    </description>
+    <description xml:lang="ja">
+      <p>やり取りしたメッセージを一々探し出すことなく、抜けのないディスカッションを読むことが可能です。</p>
+      <p>Convey には以下の機能があります</p>
+      <ul>
+        <li>メールアカウントを素早くセットアップ</li>
+        <li>関連したメッセージをまとめてスレッドに表示</li>
+        <li>高速な全文検索とキーワード検索</li>
+        <li>十分なテキスト/HTML メール作成機能</li>
+        <li>新着メールのデスクトップ通知</li>
+        <li>Gmail、Yahoo! Mail (Yahoo.com)、Outlook.com、その他の IMAP 対応サービスとの互換</li>
+      </ul>
+    </description>
+    <description xml:lang="ka">
+      <p>Convey-ის ფუნქციები შეიცავს:</p>
+      <ul>
+        <li>სწრაფ ელფოსტის ანგარიშის მორგება</li>
+        <li>სწრაფი, სრული ტექსტით და საკვანძო სიტყვით ძებნა</li>
+      </ul>
+    </description>
+    <description xml:lang="kk-Cyrl">
+      <p>Convey - бұл сөйлесулер негізінде жасалған эл. пошта қолданбасы, GNOME жұмыс үстелі үшін арналған. Оның көмегімен тура, замануи интерфейсін қолданып, эл. поштаны оқу, табу және жіберуге болады.</p>
+      <p>Сөйлесулер көмегімен сіз талқылауды толығымен оқи аласыз, бір хаттан екінші хатқа іздеп, шертуді орындамай-ақ.</p>
+      <p>Convey мүмкіндіктерінің ішінде:</p>
+      <ul>
+        <li>Эл. пошта тіркелгісін жылдам баптау</li>
+        <li>Өзара байланысқан хабарламаларды сөйлесуде бірге көрсетеді</li>
+        <li>Жылдам, толық мәтіндік және кілт сөздерін іздеу</li>
+        <li>Кең мүмкіндікті HTML және ашық мәтін хаттарын құрастыру түзеткіші</li>
+        <li>Жаңа хаттар үшін жұмыс үстел хабарламаларын көрсету</li>
+        <li>GMail, Yahoo! Mail, Outlook.com және басқа да IMAP серверлерімен үйлесімді</li>
+      </ul>
+    </description>
+    <description xml:lang="lt">
+      <p>Pokalbiai leidžia skaityti pilnas diskusijas be laiškų ieškojimo ir spaudinėjimo ant jų.</p>
+      <ul>
+        <li>Greitas el. pašto paskyros nustatymas</li>
+        <li>Rodo susijusius laiškus kartu pokalbiuose</li>
+        <li>Greita viso teksto be raktinių žodžių paieška</li>
+        <li>Pilno funkcionalumo HTML ir grynojo teksto laiko redaktorius</li>
+        <li>Darbalaukio pranešimai gavus naują laišką</li>
+        <li>Suderinama su GMail, Yahoo! Mail. Outlook.com ir kitais IMAP serveriais</li>
+      </ul>
+    </description>
+    <description xml:lang="nb">
+      <p>Samtaler lar deg lese en hel diskusjon uten å måtte trykke deg videre fra melding til melding.</p>
+      <p>Her er noen av Conveys funksjoner:</p>
+      <ul>
+        <li>Raskt oppsett av e-postkonto</li>
+        <li>Viser relaterte meldinger som samtaler</li>
+        <li>Raskt søk på nøkkelord og innholdstekst</li>
+        <li>Meldingsbehandler med fullverdig støtte for HTML og ren tekst</li>
+        <li>Vis skrivebordsvarsel ved ny e-post</li>
+        <li>Fungerer med GMail, Yahoo! Mail, Outlook.com og andre IMAP-tjenere</li>
+      </ul>
+    </description>
+    <description xml:lang="nl">
+      <p>Convey is een e-mailtoepassing die draait om gesprekken, voor de GNOME-bureaubladomgeving. Via de duidelijke, moderne interface kunt u e-mails lezen, zoeken en verzenden.</p>
+      <p>Met gesprekken kunt u een volledige discussie lezen zonder te hoeven zoeken of van bericht naar bericht te hoeven klikken.</p>
+      <p>Functies van Convey zijn:</p>
+      <ul>
+        <li>Snel instellen van e-mailaccount</li>
+        <li>Groepeert gerelateerde berichten in gesprekken</li>
+        <li>Snel zoeken in volledige tekst met zoekwoorden</li>
+        <li>Berichten opstellen in HTML en platte tekst met veel functies</li>
+        <li>Bureaubladmelding voor nieuwe e-mail</li>
+        <li>Werkt met Gmail, Yahoo! Mail, Outlook.com en andere IMAP-servers</li>
+      </ul>
+    </description>
+    <description xml:lang="pl">
+      <p>Convey to nowoczesny klient poczty dla środowiska GNOME zbudowany wokół wątków. Umożliwia czytanie, wyszukiwanie i wysyłanie wiadomości za pomocą prostego, nowoczesnego interfejsu.</p>
+      <p>Wątki umożliwiają czytanie pełnych dyskusji bez potrzeby wyszukiwania i klikania poszczególnych wiadomości.</p>
+      <p>Funkcje programu Convey:</p>
+      <ul>
+        <li>Szybkie ustawianie konta poczty</li>
+        <li>Wyświetlanie powiązanych wiadomości w jednym wątku</li>
+        <li>Szybkie wyszukiwanie w wiadomościach i słowach kluczowych</li>
+        <li>Wiele funkcji tworzenia wiadomości HTML i w zwykłym tekście</li>
+        <li>Powiadomienia o nowych wiadomościach na pulpicie</li>
+        <li>Zgodność z serwisami Gmail, Yahoo! Mail, Outlook.com i innymi serwerami IMAP</li>
+      </ul>
+    </description>
+    <description xml:lang="pt">
+      <p>O Convey é uma aplicação de correio eletrónico criada em torno de conversas, para o ambiente de trabalho GNOME. Permite-lhe ler, encontrar e enviar correio eletrónico com uma interface simples e moderna.</p>
+      <p>As Conversas permitem-lhe ler uma discussão inteira sem ter de encontrar todas as mensagens e navegar entre elas.</p>
+      <p>As funcionalidades do Convey incluem:</p>
+      <ul>
+        <li>Configuração rápida de contas de correio eletrónico</li>
+        <li>Mostra mensagens relacionadas agregadas em conversas</li>
+        <li>Procura rápida, no corpo do texto e por palavras-chave</li>
+        <li>Editor completo para mensagens em HTML e em texto simples</li>
+        <li>Notificações de novo correio no ambiente de trabalho</li>
+        <li>Compatível com o Gmail, o Yahoo! Mail, o Outlook.com, e outros servidores IMAP</li>
+      </ul>
+    </description>
+    <description xml:lang="pt-BR">
+      <p>Convey é um aplicativo de e-mail construído em conversas, para o ambiente do GNOME. Ele permite que você leia, localize e envie e-mail com uma interface simples e moderna.</p>
+      <p>As conversas permitem que você leia uma discussão completa sem ter que procurar e clicar de mensagem em mensagem.</p>
+      <p>Os recursos do Convey incluem:</p>
+      <ul>
+        <li>Configuração rápida de conta de e-mail</li>
+        <li>Mostrar mensagens relacionadas juntas, nas conversas</li>
+        <li>Pesquisa rápida, de texto completo e de palavra-chave</li>
+        <li>Compositor repleto de recursos para mensagens em HTML e texto simples</li>
+        <li>Notificação na área de trabalho de novo e-mail</li>
+        <li>Compatível com GMail, Yahoo! Mail, Outlook.com e outros servidores IMAP</li>
+      </ul>
+    </description>
+    <description xml:lang="ro">
+      <p>Convey este o aplicație de e-mail construită în jurul conversațiilor, pentru desktopul GNOME. Vă permite să citiți, să găsiți și să trimiteți e-mailuri cu o interfață simplă și modernă.</p>
+      <p>Conversațiile vă permit să citiți o discuție completă fără a trebui să căutați și să navigați de la mesaj la mesaj.</p>
+      <p>Funcționalitățile lui Convey includ:</p>
+      <ul>
+        <li>Configurare rapidă a contului de email</li>
+        <li>Arată mesajele înrudite în conversații</li>
+        <li>Căutare rapidă după un termen în tot textul</li>
+        <li>Compunător de mesaje text și HTML cu multiple funcționalități</li>
+        <li>Notificări desktop pentru noile emailuri</li>
+        <li>Compatibil cu GMail, Yahoo! Mail, Outlook.com și alte servere IMAP</li>
+      </ul>
+    </description>
+    <description xml:lang="ru">
+      <p>Convey — приложение эл. почты для рабочего стола GNOME, построенное по принципу обмена сообщениями — беседами. Позволяет читать, находить и отправлять эл. почту с простым, современным интерфейсом.</p>
+      <p>Беседы позволяют читать переписку целиком без необходимости искать и переходить от сообщения к сообщению.</p>
+      <p>К функциям Convey относятся:</p>
+      <ul>
+        <li>Быстрая настройка учётной записи эл. почты</li>
+        <li>Отображение связанных сообщений в режиме беседы</li>
+        <li>Быстрый полнотекстовый поиск и поиск по ключевым словам</li>
+        <li>Полнофункциональный режим составления писем в виде простого текста, а также с HTML разметкой</li>
+        <li>Уведомления о новых сообщениях</li>
+        <li>Совместим с GMail, Yahoo! Mail, Outlook.com и другими IMAP серверами</li>
+      </ul>
+    </description>
+    <description xml:lang="sk">
+      <p>Rozhovory vám umožňujú prečítať kompletnú diskusiu bez nutnosti vyhľadania a klikania zo správy na správu.</p>
+      <p>Funkcie aplikácie Convey zahŕňajú:</p>
+      <ul>
+        <li>Rýchle nastavenie emailového účtu</li>
+        <li>Zobrazenie spolu súvisiacich správ v rozhovoroch</li>
+        <li>Rýchle, fulltextové vyhľadávanie a hľadanie podľa kľúčového slova</li>
+        <li>Plnohodnotný nástroj na tvorbu správ vo formáte HTML a v čistom texte</li>
+        <li>Upozornenie pracovného prostredia na novú poštu</li>
+        <li>Kompatibilita so servermi GMail, Yahoo! Mail, Outlook.com a inými servermi typu IMAP</li>
+      </ul>
+    </description>
+    <description xml:lang="sl">
+      <p>Program Convey je odjemalec elektronske pošte za namizje GNOME, zasnovan za napredno zlaganja pogovorov. Omogoča branje, iskanje in pošiljanje sporočil v preglednem modernem vmesniku.</p>
+      <p>Sistem pogovorov omogoča branje niza sporočil brez odvečnega klikanja med sporočili.</p>
+      <p>Program Convey omogoča:</p>
+      <ul>
+        <li>Hitro nastavljanje računov elektronske pošte</li>
+        <li>Zbiranje povezanih sporočil v niti pogovora</li>
+        <li>Hitro iskanje po besedilu sporočil s ključnimi besedami</li>
+        <li>Zmogljivo skladanje sporočil v besedilnem ali oblikovanem zapisu HTML</li>
+        <li>Namizna obvestila o prispeli pošti</li>
+        <li>Podprti so sistemi spletne pošte, kot so Gmail, Yahoo!, Outlook.com in drugi strežniki IMAP</li>
+      </ul>
+    </description>
+    <description xml:lang="sr-Cyrl">
+      <p>Гери је програм за е-пошту заснован на разговорима, намењен Гномовој радној површи. Омогућава вам да читате, проналазите и шаљете е-пошту кроз једноставно, савремено прочеље.</p>
+      <p>Преписке вам омогућавају да прочитате читав разговор а да не морате да тражите и кликате од поруке до поруке.</p>
+      <p>У Геријеве функције спадају:</p>
+      <ul>
+        <li>Брзо подешавање налога е-поште</li>
+        <li>Заједнички приказ повезаних порука у преписци</li>
+        <li>Брза претрага по читавом тексту и кључној речи</li>
+        <li>Потпуно функционалан састављач поруке у ХТМЛ-у и обичном тексту</li>
+        <li>Обавештење о новој пошти на радној површи</li>
+        <li>Сагласан је са Г-поштом, Јаху! поштом, Аутлуком и другим ИМАП серверима</li>
+      </ul>
+    </description>
+    <description xml:lang="sr-Latn">
+      <p>Razgovori vam omogućavaju da pročitate čitav razgovor a da ne morate da tražite i klikate od poruke do poruke.</p>
+      <p>U Gerijeve funkcije spadaju:</p>
+      <ul>
+        <li>Brzo podešavanje naloga e-pošte</li>
+        <li>Zajednički prikaz povezanih poruka u razgovoru</li>
+        <li>Brza pretraga po čitavom tekstu i ključnoj reči</li>
+        <li>Potpuno funkcionalan sastavljač poruke u HTML-u i običnom tekstu</li>
+        <li>Obaveštenje o novoj pošti na radnoj površi</li>
+        <li>Saglasan je sa G-poštom, Jahu! poštom, Autlukom i drugim IMAP serverima</li>
+      </ul>
+    </description>
+    <description xml:lang="sv">
+      <p>Convey är ett e-postprogram byggt kring konversationer för GNOME-skrivbordet. Det låter dig läsa, söka och sända e-post med ett enkelt modernt gränssnitt.</p>
+      <p>Konversationer låter dig läsa en fullständig diskussion utan att behöva hitta och klicka från meddelande till meddelande.</p>
+      <p>Conveys egenskaper omfattar:</p>
+      <ul>
+        <li>Snabb inställning av e-postkonto</li>
+        <li>Visa relaterade meddelanden tillsammans i konversationer</li>
+        <li>Snabb heltext- och nyckelordssökning</li>
+        <li>Fullständig HTML- och textbehandlare</li>
+        <li>Skrivbordsaviseringar för ny e-post</li>
+        <li>Kompatibel med GMail, Yahoo! Mail, Outlook.com och andra IMAP-servrar</li>
+      </ul>
+    </description>
+    <description xml:lang="tr">
+      <p>Convey, GNOME masaüstü için konuşmalar etrafında inşa edilmiş bir e-posta uygulamasıdır. Dolambaçsız çağdaş bir arayüzle e-posta okumanızı, bulmanızı ve göndermenizi sağlar.</p>
+      <p>Konuşmalar, arayıp bulmanızı ve iletiden iletiye tıklamanızı gerektirmeden tüm tartışmayı okumanızı sağlar.</p>
+      <p>Convey’nin özellikleri şunlardır:</p>
+      <ul>
+        <li>Hızlı e-posta hesabı kurulumu</li>
+        <li>İlişkili iletileri konuşmalarda bir arada gösterir</li>
+        <li>Hızlı, tam metin ve anahtar sözcük arama</li>
+        <li>Tam donanımlı HTML ve düz metin ileti oluşturucu</li>
+        <li>Yeni postanın masaüstü bildirimi</li>
+        <li>GMail, Yahoo! Mail, Outlook.com ve diğer IMAP sunucularıyla uyumludur</li>
+      </ul>
+    </description>
+    <description xml:lang="uk">
+      <p>Convey — програма для роботи з електронною поштою, базовою концепцією якої є «спілкування». Програму призначено для стільничного середовища GNOME. Вона надає вам змогу читати, шукати та надсилати електронну пошту. Інтерфейс програми є простим і сучасним.</p>
+      <p>За допомогою можливості «спілкування» ви можете читати усе обговорення певного питання без потреби у пересуванні між його окремими повідомленнями.</p>
+      <p>Серед можливостей Convey такі:</p>
+      <ul>
+        <li>Швидке налаштовування облікового запису електронної пошти</li>
+        <li>Показ пов&apos;язаних між собою повідомлень у форматі спілкувань</li>
+        <li>Швидкий повнотекстовий пошук за ключовими словами</li>
+        <li>Редактор повідомлень із повноцінною підтримкою створення повідомлень у форматі HTML та звичайному текстовому форматі</li>
+        <li>Сповіщення про нову пошту на стільниці</li>
+        <li>Сумісність із GMail, Yahoo! Mail, Outlook.com та іншими серверами IMAP</li>
+      </ul>
+    </description>
+    <description xml:lang="zh-Hans-CN">
+      <p>Convey 是个 GNOME 桌面下围绕会话构建的电子邮件应用。它允许您使用一个直观、现代的用户界面阅读、查找和发送电子邮件。</p>
+      <p>会话允许您阅读一个完整讨论而不用一条条消息的查找和点击。</p>
+      <p>Convey 的特性包括：</p>
+      <ul>
+        <li>快速设置电子邮件帐号</li>
+        <li>在会话中集中显示相关消息</li>
+        <li>快速的全文本和关键词搜索</li>
+        <li>全功能的 HTML 和纯文本消息编辑器</li>
+        <li>新邮件桌面通知</li>
+        <li>与 GMail、雅虎邮箱、Outlook.com 和其它 IMAP 服务器兼容</li>
+      </ul>
+    </description>
+    <description xml:lang="zh-Hant-TW">
+      <p>Convey 是一款為 GNOME 桌面打造、以對話為核心的電子郵件應用程式。其現代化且符合直覺的介面，讓您能夠輕鬆地閱讀、搜尋、寄送電子郵件。</p>
+      <p>對話讓您能夠輕易地檢閱整場討論而無需在一條又一條的訊息中不停翻閱。</p>
+      <p>Convey 的特色包含：</p>
+      <ul>
+        <li>快速設定電子郵件帳號</li>
+        <li>以對話方式顯示相關訊息</li>
+        <li>快速的全文關鍵字搜尋</li>
+        <li>全功能的 HTML 格式及純文字訊息編撰器</li>
+        <li>有新郵件時顯示桌面通知</li>
+        <li>與 Gmail，Yahoo! Mail，Outlook.com 以及其它 IMAP 伺服器相容</li>
+      </ul>
+    </description>
+    <developer id="net.donnybeelo">
+      <name>Daniel Elia</name>
+    </developer>
+    <requires>
+      <display_length>360</display_length>
+    </requires>
+    <recommends>
+      <control>touch</control>
+      <control>keyboard</control>
+      <control>pointing</control>
+    </recommends>
+    <launchable type="desktop-id">net.donnybeelo.Convey.desktop</launchable>
+    <icon type="cached" width="48" height="48">net.donnybeelo.Convey.png</icon>
+    <icon type="cached" width="64" height="64">net.donnybeelo.Convey.png</icon>
+    <icon type="cached" width="64" height="64" scale="2">net.donnybeelo.Convey.png</icon>
+    <icon type="cached" width="128" height="128">net.donnybeelo.Convey.png</icon>
+    <icon type="cached" width="128" height="128" scale="2">net.donnybeelo.Convey.png</icon>
+    <icon type="stock">net.donnybeelo.Convey</icon>
+    <url type="homepage">https://gitlab.gnome.org/donnybeelo/geary</url>
+    <url type="bugtracker">https://gitlab.gnome.org/donnybeelo/geary/-/work_items</url>
+    <url type="contact">https://gitlab.gnome.org/donnybeelo</url>
+    <url type="vcs-browser">https://gitlab.gnome.org/donnybeelo/geary</url>
+    <categories>
+      <category>Network</category>
+      <category>Email</category>
+    </categories>
+    <provides>
+      <id>net.donnybeelo.Convey.desktop</id>
+      <mediatype>x-scheme-handler/mailto</mediatype>
+    </provides>
+    <languages>
+      <lang percentage="100">en_GB</lang>
+      <lang percentage="100">en_US</lang>
+    </languages>
+    <keywords>
+      <keyword>Mail</keyword>
+      <keyword>E-mail</keyword>
+      <keyword>email</keyword>
+      <keyword>IMAP</keyword>
+      <keyword>GMail</keyword>
+      <keyword>Yahoo</keyword>
+      <keyword>Hotmail</keyword>
+      <keyword>Outlook</keyword>
+    </keywords>
+    <keywords xml:lang="cs">
+      <keyword>pošta</keyword>
+      <keyword>mail</keyword>
+      <keyword>e-mail</keyword>
+      <keyword>elektronická pošta</keyword>
+      <keyword>imap</keyword>
+      <keyword>gmail</keyword>
+      <keyword>yahoo</keyword>
+      <keyword>hotmail</keyword>
+      <keyword>outlook</keyword>
+    </keywords>
+    <keywords xml:lang="da">
+      <keyword>Mail</keyword>
+      <keyword>E-mail</keyword>
+      <keyword>Email</keyword>
+      <keyword>Post</keyword>
+      <keyword>E-post</keyword>
+      <keyword>Brev</keyword>
+      <keyword>E-brev</keyword>
+      <keyword>IMAP</keyword>
+      <keyword>GMail</keyword>
+      <keyword>Yahoo</keyword>
+      <keyword>Hotmail</keyword>
+      <keyword>Outlook</keyword>
+    </keywords>
+    <keywords xml:lang="de">
+      <keyword>Mail</keyword>
+      <keyword>E-Mail</keyword>
+      <keyword>IMAP</keyword>
+      <keyword>GMail</keyword>
+      <keyword>Yahoo</keyword>
+      <keyword>Hotmail</keyword>
+      <keyword>Outlook</keyword>
+      <keyword>Post</keyword>
+      <keyword>Email</keyword>
+    </keywords>
+    <keywords xml:lang="el">
+      <keyword>Αλληλογραφία</keyword>
+      <keyword>Ηλεκτρονικό ταχυδρομείο</keyword>
+      <keyword>email</keyword>
+      <keyword>IMAP</keyword>
+      <keyword>GMail</keyword>
+      <keyword>Yahoo</keyword>
+      <keyword>Hotmail</keyword>
+      <keyword>Outlook</keyword>
+    </keywords>
+    <keywords xml:lang="en-GB">
+      <keyword>Mail</keyword>
+      <keyword>E-mail</keyword>
+      <keyword>email</keyword>
+      <keyword>IMAP</keyword>
+      <keyword>GMail</keyword>
+      <keyword>Yahoo</keyword>
+      <keyword>Hotmail</keyword>
+      <keyword>Outlook</keyword>
+    </keywords>
+    <keywords xml:lang="eu">
+      <keyword>Posta</keyword>
+      <keyword>Posta elektronikoa</keyword>
+      <keyword>email</keyword>
+      <keyword>IMAP</keyword>
+      <keyword>GMail</keyword>
+      <keyword>Yahoo</keyword>
+      <keyword>Hotmail</keyword>
+      <keyword>Outlook</keyword>
+    </keywords>
+    <keywords xml:lang="fa">
+      <keyword>Mail</keyword>
+      <keyword>E-mail</keyword>
+      <keyword>email</keyword>
+      <keyword>IMAP</keyword>
+      <keyword>GMail</keyword>
+      <keyword>Yahoo</keyword>
+      <keyword>Hotmail</keyword>
+      <keyword>Outlook</keyword>
+      <keyword>نامه</keyword>
+      <keyword>رایانامه</keyword>
+      <keyword>ای‌میل</keyword>
+      <keyword>پست</keyword>
+      <keyword>جی‌میل</keyword>
+      <keyword>یاهو</keyword>
+      <keyword>هات‌میل</keyword>
+      <keyword>اوت‌لوک</keyword>
+    </keywords>
+    <keywords xml:lang="fi">
+      <keyword>Mail</keyword>
+      <keyword>E-mail</keyword>
+      <keyword>email</keyword>
+      <keyword>IMAP</keyword>
+      <keyword>GMail</keyword>
+      <keyword>Yahoo</keyword>
+      <keyword>Hotmail</keyword>
+      <keyword>Outlook</keyword>
+      <keyword>sähköposti</keyword>
+    </keywords>
+    <keywords xml:lang="fr">
+      <keyword>Messagerie</keyword>
+      <keyword>Mail</keyword>
+      <keyword>Courriel</keyword>
+      <keyword>email</keyword>
+      <keyword>E-mail</keyword>
+      <keyword>IMAP</keyword>
+      <keyword>GMail</keyword>
+      <keyword>Yahoo</keyword>
+      <keyword>Hotmail</keyword>
+      <keyword>Outlook</keyword>
+    </keywords>
+    <keywords xml:lang="gl">
+      <keyword>Correo</keyword>
+      <keyword>Correo electrónico:correo-e</keyword>
+      <keyword>IMAP</keyword>
+      <keyword>GMail</keyword>
+      <keyword>Yahoo</keyword>
+      <keyword>Hotmail</keyword>
+      <keyword>Outlook</keyword>
+    </keywords>
+    <keywords xml:lang="he">
+      <keyword>דואר</keyword>
+      <keyword>דואר אלקטרוני</keyword>
+      <keyword>דוא״ל</keyword>
+      <keyword>דואל</keyword>
+      <keyword>מייל</keyword>
+      <keyword>אימייל</keyword>
+      <keyword>Gmail</keyword>
+      <keyword>GMaill</keyword>
+      <keyword>Yahoo</keyword>
+      <keyword>Hotmail</keyword>
+      <keyword>Outlook</keyword>
+    </keywords>
+    <keywords xml:lang="hu">
+      <keyword>Levél</keyword>
+      <keyword>Levelezés</keyword>
+      <keyword>E-mail</keyword>
+      <keyword>Email</keyword>
+      <keyword>IMAP</keyword>
+      <keyword>GMail</keyword>
+      <keyword>Yahoo</keyword>
+      <keyword>Hotmail</keyword>
+      <keyword>Outlook</keyword>
+    </keywords>
+    <keywords xml:lang="id">
+      <keyword>Surat</keyword>
+      <keyword>Surel</keyword>
+      <keyword>Mail</keyword>
+      <keyword>E-mail</keyword>
+      <keyword>IMAP</keyword>
+      <keyword>GMail</keyword>
+      <keyword>Yahoo</keyword>
+      <keyword>Hotmail</keyword>
+      <keyword>Outlook</keyword>
+    </keywords>
+    <keywords xml:lang="it">
+      <keyword>Mail</keyword>
+      <keyword>E-mail</keyword>
+      <keyword>IMAP</keyword>
+      <keyword>GMail</keyword>
+      <keyword>Yahoo</keyword>
+      <keyword>Hotmail</keyword>
+      <keyword>Outlook</keyword>
+    </keywords>
+    <keywords xml:lang="kk">
+      <keyword>Mail</keyword>
+      <keyword>E-mail</keyword>
+      <keyword>email</keyword>
+      <keyword>IMAP</keyword>
+      <keyword>GMail</keyword>
+      <keyword>Yahoo</keyword>
+      <keyword>Hotmail</keyword>
+      <keyword>Outlook</keyword>
+      <keyword>Пошта</keyword>
+      <keyword>Эл.пошта</keyword>
+    </keywords>
+    <keywords xml:lang="nl">
+      <keyword>Mail</keyword>
+      <keyword>E-mail</keyword>
+      <keyword>email</keyword>
+      <keyword>IMAP</keyword>
+      <keyword>GMail</keyword>
+      <keyword>Yahoo</keyword>
+      <keyword>Hotmail</keyword>
+      <keyword>Outlook</keyword>
+    </keywords>
+    <keywords xml:lang="pl">
+      <keyword>Poczta</keyword>
+      <keyword>Mail</keyword>
+      <keyword>E-mail</keyword>
+      <keyword>Email</keyword>
+      <keyword>Emajl</keyword>
+      <keyword>Emejl</keyword>
+      <keyword>Imail</keyword>
+      <keyword>Imejl</keyword>
+      <keyword>Imajl</keyword>
+      <keyword>Mejl</keyword>
+      <keyword>Majl</keyword>
+      <keyword>Wiadomości</keyword>
+      <keyword>IMAP</keyword>
+      <keyword>Gmail</keyword>
+      <keyword>Dżimejl</keyword>
+      <keyword>Dżimajl</keyword>
+      <keyword>Yahoo</keyword>
+      <keyword>Jahu</keyword>
+      <keyword>Hotmail</keyword>
+      <keyword>Hotmejl</keyword>
+      <keyword>Outlook</keyword>
+      <keyword>Ałtluk</keyword>
+    </keywords>
+    <keywords xml:lang="pt">
+      <keyword>Mail</keyword>
+      <keyword>E-mail</keyword>
+      <keyword>Correio</keyword>
+      <keyword>Correio Eletrónico</keyword>
+      <keyword>IMAP</keyword>
+      <keyword>GMail</keyword>
+      <keyword>Yahoo</keyword>
+      <keyword>Hotmail</keyword>
+      <keyword>Outlook</keyword>
+    </keywords>
+    <keywords xml:lang="pt-BR">
+      <keyword>Correio</keyword>
+      <keyword>E-mail</keyword>
+      <keyword>email</keyword>
+      <keyword>IMAP</keyword>
+      <keyword>GMail</keyword>
+      <keyword>Yahoo</keyword>
+      <keyword>Hotmail</keyword>
+      <keyword>Outlook</keyword>
+    </keywords>
+    <keywords xml:lang="ro">
+      <keyword>Mail</keyword>
+      <keyword>E-mail</keyword>
+      <keyword>email</keyword>
+      <keyword>IMAP</keyword>
+      <keyword>GMail</keyword>
+      <keyword>Yahoo</keyword>
+      <keyword>Hotmail</keyword>
+      <keyword>Outlook</keyword>
+      <keyword>Email</keyword>
+    </keywords>
+    <keywords xml:lang="ru">
+      <keyword>Mail</keyword>
+      <keyword>E-mail</keyword>
+      <keyword>email</keyword>
+      <keyword>IMAP</keyword>
+      <keyword>GMail</keyword>
+      <keyword>Yahoo</keyword>
+      <keyword>Hotmail</keyword>
+      <keyword>Outlook</keyword>
+      <keyword>Почта</keyword>
+      <keyword>Эл. почта</keyword>
+    </keywords>
+    <keywords xml:lang="sk">
+      <keyword>Mail</keyword>
+      <keyword>pošta</keyword>
+      <keyword>E-mail</keyword>
+      <keyword>IMAP</keyword>
+      <keyword>GMail</keyword>
+      <keyword>Yahoo</keyword>
+      <keyword>Hotmail</keyword>
+      <keyword>Outlook</keyword>
+    </keywords>
+    <keywords xml:lang="sl">
+      <keyword>Mail</keyword>
+      <keyword>E-mail</keyword>
+      <keyword>IMAP</keyword>
+      <keyword>GMail</keyword>
+      <keyword>Yahoo</keyword>
+      <keyword>Hotmail</keyword>
+      <keyword>Outlook</keyword>
+      <keyword>elektronska pošta</keyword>
+      <keyword>e-pošta</keyword>
+      <keyword>e-sporočilo</keyword>
+      <keyword>e-sporočila</keyword>
+    </keywords>
+    <keywords xml:lang="sr">
+      <keyword>Mail</keyword>
+      <keyword>E-mail</keyword>
+      <keyword>email</keyword>
+      <keyword>IMAP</keyword>
+      <keyword>GMail</keyword>
+      <keyword>Yahoo</keyword>
+      <keyword>Hotmail</keyword>
+      <keyword>Outlook</keyword>
+      <keyword>пошта</keyword>
+      <keyword>е-пошта</keyword>
+      <keyword>имап</keyword>
+      <keyword>гпошта</keyword>
+      <keyword>г-пошта</keyword>
+      <keyword>јаху</keyword>
+      <keyword>хотмејл</keyword>
+      <keyword>аутлук</keyword>
+      <keyword>џимејл</keyword>
+      <keyword>захоо</keyword>
+      <keyword>оутлоок</keyword>
+      <keyword>гмаил</keyword>
+    </keywords>
+    <keywords xml:lang="sv">
+      <keyword>Mail</keyword>
+      <keyword>Mejl</keyword>
+      <keyword>E-mail</keyword>
+      <keyword>email</keyword>
+      <keyword>E-post</keyword>
+      <keyword>Epost</keyword>
+      <keyword>IMAP</keyword>
+      <keyword>GMail</keyword>
+      <keyword>Yahoo</keyword>
+      <keyword>Hotmail</keyword>
+      <keyword>Outlook</keyword>
+    </keywords>
+    <keywords xml:lang="tr">
+      <keyword>Posta</keyword>
+      <keyword>E-posta</keyword>
+      <keyword>eposta</keyword>
+      <keyword>Mail</keyword>
+      <keyword>E-mail</keyword>
+      <keyword>email</keyword>
+      <keyword>IMAP</keyword>
+      <keyword>GMail</keyword>
+      <keyword>Yahoo</keyword>
+      <keyword>Hotmail</keyword>
+      <keyword>Outlook</keyword>
+    </keywords>
+    <keywords xml:lang="uk">
+      <keyword>Mail</keyword>
+      <keyword>E-mail</keyword>
+      <keyword>email</keyword>
+      <keyword>IMAP</keyword>
+      <keyword>GMail</keyword>
+      <keyword>Yahoo</keyword>
+      <keyword>Hotmail</keyword>
+      <keyword>Outlook</keyword>
+      <keyword>пошта</keyword>
+      <keyword>електронна</keyword>
+      <keyword>електронка</keyword>
+      <keyword>імап</keyword>
+      <keyword>аймап</keyword>
+      <keyword>повідомлення</keyword>
+      <keyword>жмейл</keyword>
+      <keyword>яху</keyword>
+      <keyword>ягу</keyword>
+      <keyword>хотмейл</keyword>
+      <keyword>готмейл</keyword>
+      <keyword>аутлук</keyword>
+    </keywords>
+    <keywords xml:lang="zh-CN">
+      <keyword>Mail</keyword>
+      <keyword>E-mail</keyword>
+      <keyword>email</keyword>
+      <keyword>IMAP</keyword>
+      <keyword>GMail</keyword>
+      <keyword>Yahoo</keyword>
+      <keyword>Hotmail</keyword>
+      <keyword>Outlook</keyword>
+      <keyword>电子邮件</keyword>
+      <keyword>电子邮箱</keyword>
+      <keyword>电子信箱</keyword>
+      <keyword>邮件</keyword>
+      <keyword>邮箱</keyword>
+      <keyword>信箱</keyword>
+      <keyword>谷歌邮箱</keyword>
+      <keyword>雅虎邮箱</keyword>
+      <keyword>微软邮箱</keyword>
+    </keywords>
+    <keywords xml:lang="zh-TW">
+      <keyword>Mail</keyword>
+      <keyword>E-mail</keyword>
+      <keyword>email</keyword>
+      <keyword>IMAP</keyword>
+      <keyword>GMail</keyword>
+      <keyword>Yahoo</keyword>
+      <keyword>Hotmail</keyword>
+      <keyword>Outlook</keyword>
+      <keyword>電子郵件</keyword>
+      <keyword>電郵</keyword>
+      <keyword>郵件</keyword>
+      <keyword>信件</keyword>
+    </keywords>
+    <branding>
+      <color type="primary" scheme_preference="light">#ffe0a8</color>
+      <color type="primary" scheme_preference="dark">#7a5206</color>
+    </branding>
+    <releases>
+      <release type="stable" version="50.0" timestamp="1787702400">
+        <description>
+          <p>The first Convey release, forked from Geary 46.0.</p>
+          <p>Enhancements included in this release:</p>
+          <ul>
+            <li>Ported the interface to GTK4 and libadwaita</li>
+            <li>Added a Microsoft Graph backend for Outlook and Microsoft 365 accounts</li>
+            <li>Rebranded as Convey, with new application icons</li>
+            <li>Create, rename and delete folders from the sidebar</li>
+            <li>Reworked conversation list with keyboard navigation between panes</li>
+            <li>Message colours now follow the system light and dark preference immediately</li>
+            <li>Redrawn notification avatars, rendered at the display&apos;s pixel density</li>
+            <li>Reworked address completion as a navigable dropdown</li>
+            <li>Ported plugins to libpeas-2 and migrated to gcr-4 and gck-2</li>
+            <li>Numerous bug fixes and user interface improvements</li>
+          </ul>
+        </description>
+      </release>
+    </releases>
+    <content_rating type="oars-1.1">
+      <content_attribute id="social-contacts">intense</content_attribute>
+    </content_rating>
+    <bundle type="flatpak" runtime="org.gnome.Platform/x86_64/50" sdk="org.gnome.Sdk/x86_64/50">app/net.donnybeelo.Convey/x86_64/stable</bundle>
+  </component><component type="desktop-application">
+    <id>net.donnybeelo.WhatsApp</id>
+    <name>WhatsApp</name>
+    <summary>Unofficial WhatsApp desktop client</summary>
+    <project_license>ISC</project_license>
+    <description>
+      <p>
+      An unofficial desktop client for WhatsApp Web, built with Electron. Adds
+      a tray icon, native desktop notifications, window state memory and a
+      background start mode.
+    </p>
+      <p>Not affiliated with or endorsed by WhatsApp LLC or Meta.</p>
+    </description>
+    <developer id="net.donnybeelo">
+      <name>Daniel Elia</name>
+    </developer>
+    <developer_name>Daniel Elia</developer_name>
+    <launchable type="desktop-id">net.donnybeelo.WhatsApp.desktop</launchable>
+    <icon type="cached" width="64" height="64">net.donnybeelo.WhatsApp.png</icon>
+    <icon type="cached" width="128" height="128">net.donnybeelo.WhatsApp.png</icon>
+    <icon type="stock">net.donnybeelo.WhatsApp</icon>
+    <url type="homepage">https://github.com/donnybeelo/whatsapp-electron</url>
+    <url type="bugtracker">https://github.com/donnybeelo/whatsapp-electron/issues</url>
+    <categories>
+      <category>Network</category>
+    </categories>
+    <provides>
+      <mediatype>x-scheme-handler/whatsapp</mediatype>
+    </provides>
+    <screenshots>
+      <screenshot type="default">
+        <caption>The main window</caption>
+        <image type="source" width="1546" height="823">https://github.com/user-attachments/assets/69929254-9899-4eb9-b3cb-961401c6a2f4</image>
+      </screenshot>
+    </screenshots>
+    <releases>
+      <release type="stable" version="3.2.2" timestamp="1787788800"/>
+    </releases>
+    <content_rating type="oars-1.1">
+      <content_attribute id="social-chat">intense</content_attribute>
+      <content_attribute id="social-audio">intense</content_attribute>
+      <content_attribute id="social-info">intense</content_attribute>
+    </content_rating>
+    <bundle type="flatpak" runtime="org.freedesktop.Platform/x86_64/24.08" sdk="org.freedesktop.Sdk/x86_64/24.08">app/net.donnybeelo.WhatsApp/x86_64/stable</bundle>
+  </component>
+</components>

@@ -34,6 +34,11 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Ubuntu's flatpak-builder (1.4.3) has no --compose-url-policy; this
+    # image ships a current one plus the GNOME 50 runtime.
+    container:
+      image: ghcr.io/flathub-infra/flatpak-github-actions:gnome-50
+      options: --privileged
     permissions:
       contents: write
     steps:
@@ -62,13 +67,8 @@ jobs:
 
       - name: Install flatpak tooling
         run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq flatpak ostree
           flatpak remote-add --user --if-not-exists flathub \
             https://dl.flathub.org/repo/flathub.flatpakrepo
-          # apt's flatpak-builder (1.4.3) has no --compose-url-policy; the
-          # flatpak of it does.
-          flatpak install --user -y --noninteractive flathub org.flatpak.Builder
 
       - name: Install the GNOME runtime and SDK
         run: |
@@ -101,8 +101,8 @@ jobs:
         uses: actions/cache@v4
         with:
           path: .flatpak-builder
-          key: fb-${{ runner.os }}-${{ hashFiles('net.donnybeelo.Convey.yml') }}
-          restore-keys: fb-${{ runner.os }}-
+          key: fb2-${{ runner.os }}-${{ hashFiles('net.donnybeelo.Convey.yml') }}
+          restore-keys: fb2-${{ runner.os }}-
 
       - name: Import signing key
         env:
@@ -121,7 +121,7 @@ jobs:
           # external screenshot URLs and software centres show "No
           # Screenshots". Flathub mirrors them instead; a self-hosted repo
           # has to keep the upstream URLs.
-          flatpak run org.flatpak.Builder --user --force-clean --disable-rofiles-fuse \
+          flatpak-builder --user --force-clean --disable-rofiles-fuse \
             --compose-url-policy=full \
             --repo=. --gpg-sign="$GPG_KEY" --default-branch=stable \
             build-dir "${MANIFEST}"
@@ -154,6 +154,9 @@ jobs:
       - name: Publish
         run: |
           rm -rf build-dir src "${MANIFEST}"
+          # The container runs as root while the checkout is owned by the
+          # runner user, so git refuses the repo without this.
+          git config --global --add safe.directory "$PWD"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
