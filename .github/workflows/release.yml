@@ -159,14 +159,23 @@ jobs:
           git config --global --add safe.directory "$PWD"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          if git diff --cached --quiet; then
-            echo "Nothing changed; not committing."
-            exit 0
-          fi
-          git commit -m "${LABEL:-Rebuild}"
-
-          # Another app may have been published into this shared repo while
-          # we were building, so land on top of it rather than being rejected.
-          git pull --rebase --autostash origin main
-          git push
+          # Another publish may have landed while we were building (or the
+          # checkout raced a replica). Never merge or rebase: the tree here is
+          # a complete, regenerated ostree repo, and its deltas, summary and
+          # refs conflict as unmergeable binaries. Reparent onto origin and
+          # keep our tree wholesale instead.
+          # ponytail: last publish wins; a version whose objects only existed
+          # in the losing run is dropped. Union-merge objects/ if that matters.
+          for try in 1 2 3; do
+            git fetch origin main
+            git reset --mixed FETCH_HEAD
+            git add -A
+            if git diff --cached --quiet; then
+              echo "Nothing changed; not committing."
+              exit 0
+            fi
+            git commit -m "${LABEL:-Rebuild}"
+            git push origin HEAD:main && exit 0
+            git reset --soft HEAD^
+          done
+          echo "::error::origin kept moving; publish failed" && exit 1
