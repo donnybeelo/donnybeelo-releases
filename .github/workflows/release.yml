@@ -100,7 +100,11 @@ jobs:
       - name: Restore build cache
         uses: actions/cache@v4
         with:
-          path: .flatpak-builder
+          # The git mirrors are excluded: a partially-fetched one makes
+          # flatpak-builder's `git lfs fetch --all` die on a missing blob.
+          path: |
+            .flatpak-builder
+            !.flatpak-builder/git
           key: fb2-${{ runner.os }}-${{ hashFiles('net.donnybeelo.Convey.yml') }}
           restore-keys: fb2-${{ runner.os }}-
 
