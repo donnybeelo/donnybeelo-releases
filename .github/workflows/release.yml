@@ -125,35 +125,20 @@ jobs:
           # external screenshot URLs and software centres show "No
           # Screenshots". Flathub mirrors them instead; a self-hosted repo
           # has to keep the upstream URLs.
+          # Built into a scratch repo, not the checkout: the published repo is
+          # only touched at push time, so a concurrent publish of another app
+          # cannot be overwritten by a tree assembled minutes earlier.
           flatpak-builder --user --force-clean --disable-rofiles-fuse \
             --compose-url-policy=full \
-            --repo=. --gpg-sign="$GPG_KEY" --default-branch=stable \
+            --repo="${RUNNER_TEMP}/scratch-repo" --gpg-sign="$GPG_KEY" \
+            --default-branch=stable \
             build-dir "${MANIFEST}"
 
       - name: Drop the Debug extension
         run: |
           ARCH=$(flatpak --default-arch)
-          ostree --repo=. refs --delete "runtime/${APP_ID}.Debug/${ARCH}/stable" || true
-
-      - name: Update, prune and re-sign the repo
-        run: |
-          flatpak build-update-repo . \
-            --title="Daniel Elia's Flatpaks" \
-            --comment="Flatpak releases by Daniel Elia" \
-            --homepage="https://donnybeelo.net" \
-            --default-branch=stable \
-            --generate-static-deltas --prune \
-            --gpg-sign="$GPG_KEY"
-
-      # The site files must survive: build-update-repo does not touch them, but
-      # a stray delete would silently unpublish the repo.
-      - name: Sanity-check the site files
-        run: |
-          for f in CNAME .nojekyll index.html donnybeelo.flatpakrepo donnybeelo-key.asc; do
-            [ -e "$f" ] || { echo "::error::$f is missing"; exit 1; }
-          done
-          flatpak build-update-repo --help >/dev/null
-          test -s summary && test -s summary.sig
+          ostree --repo="${RUNNER_TEMP}/scratch-repo" refs --delete \
+            "runtime/${APP_ID}.Debug/${ARCH}/stable" || true
 
       - name: Publish
         run: |
@@ -163,16 +148,34 @@ jobs:
           git config --global --add safe.directory "$PWD"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          # Another publish may have landed while we were building (or the
-          # checkout raced a replica). Never merge or rebase: the tree here is
-          # a complete, regenerated ostree repo, and its deltas, summary and
-          # refs conflict as unmergeable binaries. Reparent onto origin and
-          # keep our tree wholesale instead.
-          # ponytail: last publish wins; a version whose objects only existed
-          # in the losing run is dropped. Union-merge objects/ if that matters.
+
+          # Another app publishes into this same ostree repo, so the tree is
+          # assembled on top of whatever origin holds at push time: reset to
+          # origin, pull this build's refs in, regenerate the summary, push,
+          # and on rejection start over from the new origin.
           for try in 1 2 3; do
             git fetch origin main
-            git reset --mixed FETCH_HEAD
+            git reset --hard FETCH_HEAD
+            mkdir -p refs/heads refs/mirrors refs/remotes state extensions tmp/cache
+
+            ostree --repo=. pull-local "${RUNNER_TEMP}/scratch-repo" \
+              $(ostree --repo="${RUNNER_TEMP}/scratch-repo" refs)
+
+            flatpak build-update-repo . \
+              --title="Daniel Elia's Flatpaks" \
+              --comment="Flatpak releases by Daniel Elia" \
+              --homepage="https://donnybeelo.net" \
+              --default-branch=stable \
+              --generate-static-deltas --prune \
+              --gpg-sign="$GPG_KEY"
+
+            # The site files must survive: build-update-repo does not touch
+            # them, but a stray delete would silently unpublish the repo.
+            for f in CNAME .nojekyll index.html donnybeelo.flatpakrepo donnybeelo-key.asc; do
+              [ -e "$f" ] || { echo "::error::$f is missing"; exit 1; }
+            done
+            test -s summary && test -s summary.sig
+
             git add -A
             if git diff --cached --quiet; then
               echo "Nothing changed; not committing."
@@ -180,6 +183,5 @@ jobs:
             fi
             git commit -m "${LABEL:-Rebuild}"
             git push origin HEAD:main && exit 0
-            git reset --soft HEAD^
           done
           echo "::error::origin kept moving; publish failed" && exit 1
