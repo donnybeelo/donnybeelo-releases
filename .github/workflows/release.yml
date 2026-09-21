@@ -29,7 +29,7 @@ concurrency:
 env:
   APP_ID: net.donnybeelo.Convey
   MANIFEST: net.donnybeelo.Convey.yml
-  RUNTIME_VERSION: '50'
+  RUNTIME_VERSION: '51'
 
 jobs:
   build:
