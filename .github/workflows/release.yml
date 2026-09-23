@@ -33,7 +33,11 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        runner: [ubuntu-latest, ubuntu-24.04-arm]
+    runs-on: ${{ matrix.runner }}
     # Ubuntu's flatpak-builder (1.4.3) has no --compose-url-policy; this
     # image ships a current one plus the GNOME 50 runtime.
     container:
@@ -105,8 +109,8 @@ jobs:
           path: |
             .flatpak-builder
             !.flatpak-builder/git
-          key: fb2-${{ runner.os }}-${{ hashFiles('net.donnybeelo.Convey.yml') }}
-          restore-keys: fb2-${{ runner.os }}-
+          key: fb2-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('net.donnybeelo.Convey.yml') }}
+          restore-keys: fb2-${{ runner.os }}-${{ runner.arch }}-
 
       - name: Import signing key
         env:
@@ -181,7 +185,7 @@ jobs:
               echo "Nothing changed; not committing."
               exit 0
             fi
-            git commit -m "${LABEL:-Rebuild}"
+            git commit -m "${LABEL:-Rebuild} ($(flatpak --default-arch))"
             git push origin HEAD:main && exit 0
           done
           echo "::error::origin kept moving; publish failed" && exit 1
