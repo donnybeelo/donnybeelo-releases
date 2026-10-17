@@ -165,10 +165,6 @@ jobs:
             ostree --repo=. pull-local "${RUNNER_TEMP}/scratch-repo" \
               $(ostree --repo="${RUNNER_TEMP}/scratch-repo" refs)
 
-            # Removes the old stable app ref.
-            ostree --repo=. refs --delete \
-              "app/${APP_ID}/$(flatpak --default-arch)/stable" || true
-
             flatpak build-update-repo . \
               --title="Daniel Elia's Flatpaks" \
               --comment="Flatpak releases by Daniel Elia" \
