@@ -135,14 +135,14 @@ jobs:
           flatpak-builder --user --force-clean --disable-rofiles-fuse \
             --compose-url-policy=full \
             --repo="${RUNNER_TEMP}/scratch-repo" --gpg-sign="$GPG_KEY" \
-            --default-branch=stable \
+            --default-branch=nightly \
             build-dir "${MANIFEST}"
 
       - name: Drop the Debug extension
         run: |
           ARCH=$(flatpak --default-arch)
           ostree --repo="${RUNNER_TEMP}/scratch-repo" refs --delete \
-            "runtime/${APP_ID}.Debug/${ARCH}/stable" || true
+            "runtime/${APP_ID}.Debug/${ARCH}/nightly" || true
 
       - name: Publish
         run: |
@@ -164,6 +164,10 @@ jobs:
 
             ostree --repo=. pull-local "${RUNNER_TEMP}/scratch-repo" \
               $(ostree --repo="${RUNNER_TEMP}/scratch-repo" refs)
+
+            # Removes the old stable app ref.
+            ostree --repo=. refs --delete \
+              "app/${APP_ID}/$(flatpak --default-arch)/stable" || true
 
             flatpak build-update-repo . \
               --title="Daniel Elia's Flatpaks" \
