@@ -96,6 +96,22 @@ jobs:
             grep -q "commit: $APP_COMMIT" "${MANIFEST}" \
               || { echo "::error::failed to pin convey to $APP_COMMIT"; exit 1; }
           fi
+
+          # Only pass -Dnightly when the convey commit being built has that
+          # meson option.
+          pinned() {
+            sed -n "/donnybeelo\/convey.git/,+2 s/^[[:space:]]*$1:[[:space:]]*//p" "${MANIFEST}" | tr -d "'\""
+          }
+          BUILD_REF="${APP_COMMIT:-$(pinned tag)}"
+          BUILD_REF="${BUILD_REF:-$(pinned commit)}"
+          if git -C src fetch --depth 1 origin "$BUILD_REF" \
+              && git -C src show FETCH_HEAD:meson.options | grep -q "'nightly'"; then
+            sed -i 's|^\([[:space:]]*\)- -Dprofile=release$|&\n\1- -Dnightly=true|' "${MANIFEST}"
+            grep -q -- '-Dnightly=true' "${MANIFEST}" \
+              || { echo "::error::failed to enable nightly"; exit 1; }
+          else
+            echo "$BUILD_REF has no nightly option; building with the stable icon"
+          fi
           echo "Manifest from $MANIFEST_REF:"
           grep -A3 'donnybeelo/convey.git' "${MANIFEST}"
 
