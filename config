@@ -7,4 +7,4 @@ indexed-deltas=true
 title=Daniel Elia's Flatpaks
 comment=Flatpak releases by Daniel Elia
 homepage=https://donnybeelo.net
-default-branch=stable
+default-branch=nightly
