@@ -29,7 +29,6 @@ concurrency:
 env:
   APP_ID: net.donnybeelo.Convey
   MANIFEST: net.donnybeelo.Convey.yml
-  RUNTIME_VERSION: '51'
 
 jobs:
   build:
@@ -73,11 +72,6 @@ jobs:
         run: |
           flatpak remote-add --user --if-not-exists flathub \
             https://dl.flathub.org/repo/flathub.flatpakrepo
-
-      - name: Install the GNOME runtime and SDK
-        run: |
-          flatpak install --user -y --noninteractive --no-static-deltas flathub \
-            org.gnome.Platform//${RUNTIME_VERSION} org.gnome.Sdk//${RUNTIME_VERSION}
 
       - name: Fetch the manifest
         run: |
@@ -149,6 +143,7 @@ jobs:
           # only touched at push time, so a concurrent publish of another app
           # cannot be overwritten by a tree assembled minutes earlier.
           flatpak-builder --user --force-clean --disable-rofiles-fuse \
+            --install-deps-from=flathub \
             --compose-url-policy=full \
             --repo="${RUNNER_TEMP}/scratch-repo" --gpg-sign="$GPG_KEY" \
             --default-branch=nightly \
