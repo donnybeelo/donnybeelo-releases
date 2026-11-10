@@ -60,6 +60,7 @@ jobs:
       - name: Check out the release repo
         uses: actions/checkout@v4
         with:
+          ref: pages
           fetch-depth: 0
 
       # git cannot track empty directories, so a fresh clone of the ostree
@@ -155,6 +156,32 @@ jobs:
           ostree --repo="${RUNNER_TEMP}/scratch-repo" refs --delete \
             "runtime/${APP_ID}.Debug/${ARCH}/nightly" || true
 
+      - name: Export the same build as the Devel app
+        run: |
+          DEV_ID="${APP_ID}.Devel"
+          B=build-dir
+          S=$B/files/share
+          rm -rf "$B/export" "$S/app-info"
+          mv "$S/applications/$APP_ID.desktop" "$S/applications/$DEV_ID.desktop"
+          mv "$S/metainfo/$APP_ID.metainfo.xml" "$S/metainfo/$DEV_ID.metainfo.xml"
+          mv "$S/dbus-1/services/$APP_ID.service" "$S/dbus-1/services/$DEV_ID.service"
+          mv "$S/icons/hicolor/symbolic/apps/$APP_ID-symbolic.svg" "$S/icons/hicolor/symbolic/apps/$DEV_ID-symbolic.svg"
+          rm "$S/icons/hicolor/scalable/apps/$APP_ID.svg"
+          cp "src/icons/hicolor/scalable/apps/$DEV_ID.svg" "$S/icons/hicolor/scalable/apps/"
+          sed -i 's/net\.donnybeelo\.Convey/&.Devel/g' \
+            "$S/applications/$DEV_ID.desktop" "$S/metainfo/$DEV_ID.metainfo.xml" \
+            "$S/dbus-1/services/$DEV_ID.service" "$B/metadata" "$B/metadata.locale"
+
+          appstreamcli compose --no-partial-urls --prefix=/ --origin="$DEV_ID" \
+            --result-root="$B/files" --data-dir="$S/app-info/xmls" \
+            --icons-dir="$S/app-info/icons/flatpak" --components="$DEV_ID" "$B/files"
+
+          flatpak build-finish "$B"
+          flatpak build-export --gpg-sign="$GPG_KEY" "${RUNNER_TEMP}/scratch-repo" "$B" nightly
+          flatpak build-export --runtime --metadata=metadata.locale \
+            --files=files/share/runtime/locale --gpg-sign="$GPG_KEY" \
+            "${RUNNER_TEMP}/scratch-repo" "$B" nightly
+
       - name: Publish
         run: |
           rm -rf build-dir src "${MANIFEST}"
@@ -169,7 +196,7 @@ jobs:
           # origin, pull this build's refs in, regenerate the summary, push,
           # and on rejection start over from the new origin.
           for try in 1 2 3; do
-            git fetch origin main
+            git fetch origin pages
             git reset --hard FETCH_HEAD
             mkdir -p refs/heads refs/mirrors refs/remotes state extensions tmp/cache
 
@@ -197,6 +224,6 @@ jobs:
               exit 0
             fi
             git commit -m "${LABEL:-Rebuild} ($(flatpak --default-arch))"
-            git push origin HEAD:main && exit 0
+            git push origin HEAD:pages && exit 0
           done
           echo "::error::origin kept moving; publish failed" && exit 1
