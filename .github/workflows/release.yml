@@ -172,7 +172,7 @@ jobs:
             "$S/applications/$DEV_ID.desktop" "$S/metainfo/$DEV_ID.metainfo.xml" \
             "$S/dbus-1/services/$DEV_ID.service" "$B/metadata" "$B/metadata.locale"
 
-          appstreamcli compose --no-partial-urls --prefix=/ --origin="$DEV_ID" \
+          appstreamcli compose --prefix=/ --origin="$DEV_ID" \
             --result-root="$B/files" --data-dir="$S/app-info/xmls" \
             --icons-dir="$S/app-info/icons/flatpak" --components="$DEV_ID" "$B/files"
 
