@@ -28,21 +28,29 @@
 <pre>flatpak remote-add --if-not-exists donnybeelo https://releases.donnybeelo.net/donnybeelo.flatpakrepo</pre>
 
 <h2>Applications</h2>
-<table>
+<table id="apps">
   <tr><th>Application</th><th>ID</th><th>Install</th></tr>
-  <tr>
-    <td><a href="https://gitlab.gnome.org/donnybeelo/geary">Convey</a><br>
-        <span style="color:var(--mut)">Email client</span></td>
-    <td><code>net.donnybeelo.Convey</code></td>
-    <td><code>flatpak install donnybeelo net.donnybeelo.Convey//nightly</code></td>
-  </tr>
-  <tr>
-    <td><a href="https://github.com/donnybeelo/whatsapp-electron">WhatsApp</a><br>
-        <span style="color:var(--mut)">Unofficial WhatsApp desktop client</span></td>
-    <td><code>net.donnybeelo.WhatsApp</code></td>
-    <td><code>flatpak install donnybeelo net.donnybeelo.WhatsApp</code></td>
-  </tr>
 </table>
+<script>
+fetch('appstream.xml').then(r => r.text()).then(xml => {
+  const doc = new DOMParser().parseFromString(xml, 'application/xml');
+  const rows = [...doc.querySelectorAll('component')].map(c => {
+    const get = sel => c.querySelector(sel)?.textContent ?? '';
+    const own = tag => [...c.children].find(e => e.localName === tag && !e.hasAttribute('xml:lang'))?.textContent ?? '';
+    const id = own('id');
+    const branch = get('bundle').split('/')[3];
+    const ref = branch === 'stable' ? id : `${id}//${branch}`;
+    const url = get('url[type="vcs-browser"]') || get('url[type="homepage"]');
+    return `<tr>
+      <td><a href="${url}">${own('name')}</a><br>
+          <span style="color:var(--mut)">${own('summary')}</span></td>
+      <td><code>${id}</code></td>
+      <td><code>flatpak install donnybeelo ${ref}</code></td>
+    </tr>`;
+  });
+  document.querySelector('#apps').insertAdjacentHTML('beforeend', rows.join(''));
+});
+</script>
 
 <h2>Updates</h2>
 <pre>flatpak update</pre>
