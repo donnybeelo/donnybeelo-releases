@@ -129,6 +129,7 @@ jobs:
               --default-branch=nightly \
               --generate-static-deltas --prune \
               --gpg-sign="$GPG_KEY"
+            ostree --repo=. cat appstream2/x86_64 /appstream.xml > appstream.xml
 
             for f in CNAME .nojekyll index.html donnybeelo.flatpakrepo donnybeelo-key.asc; do
               [ -e "$f" ] || { echo "::error::$f is missing"; exit 1; }

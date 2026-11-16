@@ -210,6 +210,7 @@ jobs:
               --default-branch=nightly \
               --generate-static-deltas --prune \
               --gpg-sign="$GPG_KEY"
+            ostree --repo=. cat appstream2/x86_64 /appstream.xml > appstream.xml
 
             # The site files must survive: build-update-repo does not touch
             # them, but a stray delete would silently unpublish the repo.
