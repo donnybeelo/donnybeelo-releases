@@ -1914,8 +1914,49 @@
       <mediatype>x-scheme-handler/mailto</mediatype>
     </provides>
     <languages>
-      <lang percentage="100">en_GB</lang>
+      <lang percentage="74">be</lang>
+      <lang percentage="25">bs</lang>
+      <lang percentage="77">ca</lang>
+      <lang percentage="79">cs</lang>
+      <lang percentage="79">da</lang>
+      <lang percentage="79">de</lang>
+      <lang percentage="79">el</lang>
+      <lang percentage="79">en_GB</lang>
       <lang percentage="100">en_US</lang>
+      <lang percentage="76">es</lang>
+      <lang percentage="78">eu</lang>
+      <lang percentage="78">fa</lang>
+      <lang percentage="77">fi</lang>
+      <lang percentage="100">fr</lang>
+      <lang percentage="77">fur</lang>
+      <lang percentage="79">gl</lang>
+      <lang percentage="79">he</lang>
+      <lang percentage="77">hr</lang>
+      <lang percentage="79">hu</lang>
+      <lang percentage="79">id</lang>
+      <lang percentage="33">ie</lang>
+      <lang percentage="79">it</lang>
+      <lang percentage="70">ja</lang>
+      <lang percentage="42">ka</lang>
+      <lang percentage="79">kk</lang>
+      <lang percentage="29">lt</lang>
+      <lang percentage="39">nb</lang>
+      <lang percentage="79">nl</lang>
+      <lang percentage="36">oc</lang>
+      <lang percentage="79">pl</lang>
+      <lang percentage="79">pt</lang>
+      <lang percentage="79">pt_BR</lang>
+      <lang percentage="79">ro</lang>
+      <lang percentage="79">ru</lang>
+      <lang percentage="77">sk</lang>
+      <lang percentage="79">sl</lang>
+      <lang percentage="79">sr</lang>
+      <lang percentage="41">sr@latin</lang>
+      <lang percentage="79">sv</lang>
+      <lang percentage="79">tr</lang>
+      <lang percentage="79">uk</lang>
+      <lang percentage="79">zh_CN</lang>
+      <lang percentage="79">zh_TW</lang>
     </languages>
     <screenshots>
       <screenshot type="default">
