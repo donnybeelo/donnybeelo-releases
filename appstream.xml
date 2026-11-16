@@ -2522,7 +2522,7 @@
     <icon type="cached" width="64" height="64">net.donnybeelo.Slack.png</icon>
     <icon type="cached" width="128" height="128">net.donnybeelo.Slack.png</icon>
     <icon type="stock">net.donnybeelo.Slack</icon>
-    <url type="homepage">https://donnybeelo.net</url>
+    <url type="homepage">https://github.com/donnybeelo/slack-electron</url>
     <categories>
       <category>Network</category>
     </categories>
