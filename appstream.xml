@@ -2332,6 +2332,34 @@
     </content_rating>
     <bundle type="flatpak" runtime="org.gnome.Platform/x86_64/51" sdk="org.gnome.Sdk/x86_64/51">app/net.donnybeelo.Convey/x86_64/nightly</bundle>
   </component><component type="desktop-application">
+    <id>net.donnybeelo.Maps</id>
+    <name>Google Maps</name>
+    <summary>Unofficial Google Maps desktop client</summary>
+    <project_license>ISC</project_license>
+    <description>
+      <p>
+      An unofficial desktop client for Google Maps, built with Electron. Adds GNOME-style
+      window controls and gets your location from the desktop&apos;s location service.
+    </p>
+      <p>Not affiliated with or endorsed by Google.</p>
+    </description>
+    <developer id="net.donnybeelo">
+      <name>Daniel Elia</name>
+    </developer>
+    <developer_name>Daniel Elia</developer_name>
+    <launchable type="desktop-id">net.donnybeelo.Maps.desktop</launchable>
+    <icon type="cached" width="64" height="64">net.donnybeelo.Maps.png</icon>
+    <icon type="cached" width="128" height="128">net.donnybeelo.Maps.png</icon>
+    <icon type="stock">net.donnybeelo.Maps</icon>
+    <categories>
+      <category>Utility</category>
+    </categories>
+    <releases>
+      <release type="stable" version="1.0.0" timestamp="1795305600"/>
+    </releases>
+    <content_rating type="oars-1.1"/>
+    <bundle type="flatpak" runtime="org.freedesktop.Platform/x86_64/26.08" sdk="org.freedesktop.Sdk/x86_64/26.08">app/net.donnybeelo.Maps/x86_64/stable</bundle>
+  </component><component type="desktop-application">
     <id>net.donnybeelo.Slack</id>
     <name>Slack</name>
     <summary>Unofficial Slack desktop client</summary>
