@@ -84,7 +84,8 @@ jobs:
             https://dl.flathub.org/repo/flathub.flatpakrepo
           sudo flatpak install -y --noninteractive --no-static-deltas flathub \
             org.freedesktop.Platform//26.08 org.freedesktop.Sdk//26.08 \
-            org.electronjs.Electron2.BaseApp//26.08
+            org.electronjs.Electron2.BaseApp//26.08 \
+            $([ "$REPO" = donnybeelo/maps-electron ] && echo org.gnome.Platform//51 org.gnome.Sdk//51)
 
       - name: Build the flatpak bundle
         working-directory: app
