@@ -2358,7 +2358,7 @@
       <release type="stable" version="1.0.0" timestamp="1795305600"/>
     </releases>
     <content_rating type="oars-1.1"/>
-    <bundle type="flatpak" runtime="org.freedesktop.Platform/x86_64/26.08" sdk="org.freedesktop.Sdk/x86_64/26.08">app/net.donnybeelo.Maps/x86_64/stable</bundle>
+    <bundle type="flatpak" runtime="org.gnome.Platform/x86_64/51" sdk="org.gnome.Sdk/x86_64/51">app/net.donnybeelo.Maps/x86_64/stable</bundle>
   </component><component type="desktop-application">
     <id>net.donnybeelo.Slack</id>
     <name>Slack</name>
