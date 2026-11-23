@@ -12,6 +12,7 @@ on:
         options:
           - donnybeelo/whatsapp-electron
           - donnybeelo/slack-electron
+          - donnybeelo/maps-electron
       commit:
         description: Commit to build (blank = main)
         required: false
@@ -42,7 +43,7 @@ jobs:
             echo "LABEL=${{ inputs.label }}"   >> "$GITHUB_ENV"
           fi
           case "$REPO" in
-            donnybeelo/whatsapp-electron|donnybeelo/slack-electron) ;;
+            donnybeelo/whatsapp-electron|donnybeelo/slack-electron|donnybeelo/maps-electron) ;;
             *) echo "::error::refusing to build $REPO" && exit 1 ;;
           esac
           echo "REPO=$REPO" >> "$GITHUB_ENV"
